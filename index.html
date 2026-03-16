@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweep TV Nigeria | APC Political Insights & Live News</title>
+    <link rel="icon" type="image/png" href="LOGO.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-red: #E53935;
+            --soft-bg: #f4f7f6;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --dark-blue: #1A237E;
+            --footer-dark: #111111;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--soft-bg);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+        .animate-pulse { animation: pulse 2s infinite; }
+
+        /* Layout Elements */
+        .top-bar { background: #fff; border-bottom: 1px solid #eee; padding: 8px 0; font-size: 0.85rem; }
+        
+        .navbar { 
+            background: rgba(255, 255, 255, 0.95) !important; 
+            backdrop-filter: blur(10px); 
+            padding: 12px 0; 
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
+        }
+
+        .navbar-brand { font-weight: 800; letter-spacing: -1px; font-size: 1.8rem; color: var(--primary-red) !important; }
+        .nav-link { font-weight: 600; color: #444 !important; transition: 0.3s; font-size: 0.95rem; }
+        .nav-link:hover { color: var(--primary-red) !important; }
+
+        .ticker-wrap { 
+            background: #fff; 
+            padding: 12px; 
+            border-radius: 50px; 
+            box-shadow: var(--card-shadow); 
+            margin-bottom: 30px; 
+            display: flex; 
+            align-items: center; 
+        }
+        .ticker-label { 
+            background: var(--primary-red); 
+            color: white; 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            font-weight: bold; 
+            font-size: 0.75rem; 
+            margin-right: 15px; 
+            white-space: nowrap;
+        }
+
+        /* Hero Section */
+        .hero-container { border-radius: 24px; overflow: hidden; position: relative; height: 500px; box-shadow: var(--card-shadow); }
+        .hero-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
+        .hero-container:hover .hero-img { transform: scale(1.03); }
+        .hero-overlay { 
+            position: absolute; bottom: 0; left: 0; right: 0; 
+            padding: 40px; 
+            background: linear-gradient(transparent, rgba(0,0,0,0.95)); 
+            color: white; 
+        }
+
+        /* News Cards */
+        .post-card { 
+            background: white; border-radius: 20px; overflow: hidden; border: none; 
+            transition: 0.3s; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
+        }
+        .post-card:hover { transform: translateY(-8px); box-shadow: var(--card-shadow); }
+        .category-badge { font-size: 0.65rem; text-transform: uppercase; font-weight: 800; color: var(--primary-red); letter-spacing: 1px; }
+
+        /* Sidebar */
+        .sidebar-widget { background: white; border-radius: 20px; padding: 25px; box-shadow: var(--card-shadow); margin-bottom: 30px; }
+        
+        /* Footer */
+        .footer-modern { 
+            background: var(--footer-dark); color: #fff; padding: 80px 0 30px; 
+            border-radius: 40px 40px 0 0; margin-top: 80px; 
+        }
+        .footer-link { color: #aaa; text-decoration: none; transition: 0.3s; display: block; margin-bottom: 10px; font-size: 0.9rem; }
+        .footer-link:hover { color: var(--primary-red); padding-left: 5px; }
+        
+        .newsletter-input { 
+            background: #222; border: 1px solid #333; color: #fff; 
+            border-radius: 30px; padding: 12px 20px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div id="nigerian-clock" class="text-muted fw-bold"></div>
+            <div class="social-icons">
+                <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-muted me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <a class="navbar-brand mb-0 pb-0" href="#">
+                    SWEEP<span style="color:#222">TV</span>
+                    <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
+                </a>
+                <small class="text-muted d-none d-lg-block" style="font-size: 0.7rem; font-weight: 600;">
+                    Your No.1 Hub for APC News & Top Analysis
+                </small>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-danger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold text-danger" href="#" id="apcDrop" data-bs-toggle="dropdown">APC Central</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="nwc.html">NWC Updates</a></li>
+                            <li><a class="dropdown-item" href="roadmap.html">2027 Roadmap</a></li>
+                            <li><a class="dropdown-item" href="statechapters.html">State Chapters</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="nav-item"><a class="nav-link" href="Politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Business.html">Business </a></li>
+                    
+                    <li class="nav-item ms-lg-3"><a class="nav-link small text-muted border-start ps-lg-3" href="about.html">About Us</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <div class="ticker-wrap">
+            <span class="ticker-label">BREAKING NEWS</span>
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="font-weight: 600; font-size: 0.9rem;">
+                March 16, 2026: APC NWC dismisses ADC's "inciting" economic report... Gov. Peter Mbah formalizes APC membership in Enugu... President Tinubu appoints Tunji Disu as Inspector General of Police...
+            </marquee>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="hero-container mb-5">
+                    <img src="https://viewpointnigeria.org/wp-content/uploads/2023/11/IMG-20231119-WA0055.jpg" class="hero-img" alt="APC Convention">
+                    <div class="hero-overlay">
+                        <span class="badge bg-danger mb-3">EXCLUSIVE COVERAGE</span>
+                        <h1 class="display-6 fw-bold">Prof. Nentawe Yilwatda Outlines Vision for APC "Renewed Unity"</h1>
+                        <p class="opacity-75">As the new National Chairman takes charge, party insiders predict a massive structural sweep to consolidate power ahead of the 2027 cycle.</p>
+                    </div>
+                </div>
+
+                <h4 class="fw-bold mb-4 border-start border-danger border-4 ps-3">Frontline Stories</h4>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="post-card card">
+                            <img src="https://cdn.punchng.com/wp-content/uploads/2025/10/14123058/IMG_8761.jpeg " class="card-img-top" style="height:220px; object-fit:cover;" alt="Enugu">
+                            <div class="card-body">
+                                <span class="category-badge">Regional Politics</span>
+                                <h5 class="fw-bold mt-2">The Enugu Earthquake: Gov. Mbah Joins APC</h5>
+                                <p class="text-muted small">Sweep TV analyzes the implications of the PDP's loss of a key Southeast governor to the ruling party.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="post-card card">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.Bhe2svOkahwDywbcpEpqawHaLM?rs=1&pid=ImgDetMain&o=7&rm=3 " class="card-img-top" style="height:220px; object-fit:cover;" alt="Police">
+                            <div class="card-body">
+                                <span class="category-badge">Security Policy</span>
+                                <h5 class="fw-bold mt-2">New IGP Tunji Disu Vows Reforms</h5>
+                                <p class="text-muted small">Newly appointed IGP outlines a 5-point agenda to align security with the Renewed Hope mandate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="sidebar-widget">
+                    <h5 class="fw-bold mb-4">Trending Updates</h5>
+                    <div class="d-flex mb-4 align-items-start">
+                        <div class="h3 fw-bold text-light me-3">01</div>
+                        <div>
+                            <h6 class="fw-bold mb-1">APC vs ADC: The Poverty Data War</h6>
+                            <p class="small text-muted mb-0">2 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 align-items-start">
+                        <div class="h3 fw-bold text-light me-3">02</div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Gov. Uzodimma Chairs Convention Committee</h6>
+                            <p class="small text-muted mb-0">5 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 align-items-start">
+                        <div class="h3 fw-bold text-light me-3">03</div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Lagos Tech Corridor Grant Approved</h6>
+                            <p class="small text-muted mb-0">9 hours ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget bg-danger text-white">
+                    <h6 class="fw-bold mb-2">APC PARTY BULLETIN</h6>
+                    <hr class="bg-white">
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Ward Registration Phase II</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Youth Summit: March 25</li>
+                        <li><i class="fas fa-check-circle me-2"></i> National Convention: Coming Soon</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+<main class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h4 class="fw-bold mb-4 border-start border-danger border-4 ps-3">Latest Political Intel</h4>
+
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.4ISTweifG38nnhNaC41zUAHaGm?rs=1&pid=ImgDetMain&o=7&rm=3 " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Gavel">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-politics">Party Supremacy</span>
+                                <h4 class="fw-bold mt-2">Nentawe Yilwatda Issues 48-Hour Ultimatum to Disloyal State Chairmen</h4>
+                                <p class="text-muted small">In his first major move as National Chairman, Yilwatda demands total alignment with the 'Renewed Hope' project or face immediate dissolution of state executives.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 45 mins ago</small>
+                                    <a href="#" class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://newtelegraphng.com/wp-content/uploads/2026/02/Bola-Tinubu-768x576.jpg " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Nigeria Map">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-politics">Defection Watch</span>
+                                <h4 class="fw-bold mt-2">Rumors Swirl as Five PDP Senators Meet with Tinubu Behind Closed Doors</h4>
+                                <p class="text-muted small">Sources suggest a massive "Southeastern Sweep" is in the works, potentially giving APC a two-thirds majority in the Red Chamber by Q3 2026.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 3 hours ago</small>
+                                    <a href="#" class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://i.pinimg.com/1200x/5f/15/7e/5f157e082e5c719e5a3ad9a69381b133.jpg " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Document">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-politics">Legislative Focus</span>
+                                <h4 class="fw-bold mt-2">State Police: APC Governors Forum Submits Harmonized Report to National Assembly</h4>
+                                <p class="text-muted small">The proposed 2026 Constitutional Amendment looks to decentralize security, a move the APC says will end the "banditry era" once and for all.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 6 hours ago</small>
+                                    <a href="#" class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="sidebar-widget bg-white p-4 rounded-4 shadow-sm mb-4">
+                    <h5 class="fw-bold mb-4">Power Rankings <i class="fas fa-chart-line text-danger ms-2"></i></h5>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">01</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Nentawe Yilwatda</h6>
+                            <small class="text-muted">National Chairman (Rising) <BR><BR> </small>
+                        </div>
+                    </div>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">02</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Gov. Peter Mbah</h6>
+                            <small class="text-muted">Enugu APC Liaison (New Entry) <BR> <BR></small>
+                        </div>
+                    </div>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">03</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Tunji Disu</h6>
+                            <small class="text-muted">IGP - Security Reformist  <BR><BR> </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget bg-danger text-white p-4 rounded-4 shadow-sm">
+                    <h5 class="fw-bold">2027 Voter Census</h5>
+                    <p class="small opacity-75">APC Youth Wing begins nationwide digital registration of first-time voters.</p>
+                    <button class="btn btn-light btn-sm w-100 fw-bold py-2">View Data Portal</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo text-white text-decoration-none" href="#">SWEEP<span class="text-danger">TV</span></a>
+                    <p style="color: #cbcbcb;">Nigeria's premier digital media platform dedicated to comprehensive, unbiased coverage of the All Progressives Congress and national development.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">CATEGORIES</h6>
+                    <a href="Politics.html" class="footer-link">APC News</a>
+                    <a href="roadmap.html" class="footer-link">2027 Tracker</a>
+                    <a href="Politics.html" class="footer-link">Governance</a>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">RESOURCES</h6>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="advert.html" class="footer-link">Advert Rate </a>
+                    <a href="Team.html" class="footer-link">Team</a>
+                    <a href="Privacy.html" class="footer-link">Privacy</a>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-4">NEWSLETTER</h6>
+                    <div class="input-group">
+                        <input type="text" class="form-control newsletter-input" placeholder="Your email">
+                        <button class="btn btn-danger rounded-pill ms-2 px-4">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 text-center border-top border-secondary">
+                <p  style="color: #aaa;">&copy; 2026 Sweep TV Nigeria. Truth. Progress. Democracy.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateTime() {
+            const options = { 
+                timeZone: 'Africa/Lagos', weekday: 'long', year: 'numeric', 
+                month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
+            };
+            const clock = document.getElementById('nigerian-clock');
+            if(clock) clock.innerText = new Intl.DateTimeFormat('en-NG', options).format(new Date()) + " WAT";
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>

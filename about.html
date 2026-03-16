@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Sweep TV Nigeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-red: #D32F2F;
+            --pure-white: #FFFFFF;
+            --dark-gray: #212121;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
+
+        /* Navigation Sync */
+        .top-bar { background-color: var(--primary-red); color: white; font-size: 0.9rem; padding: 8px 0; }
+        .navbar-brand { font-weight: 800; color: var(--primary-red) !important; font-size: 1.8rem; }
+        .nav-link { font-weight: 600; text-transform: uppercase; color: var(--dark-gray); }
+        
+        /* About Page Specifics */
+        .about-header {
+            background: linear-gradient(rgba(211, 47, 47, 0.9), rgba(33, 33, 33, 0.9)), url('https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 50px;
+        }
+
+        .mission-box {
+            border-left: 5px solid var(--primary-red);
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 20px;
+            background: var(--dark-gray);
+            color: white;
+            border-radius: 8px;
+        }
+
+        .team-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--primary-red);
+            margin-bottom: 15px;
+        }
+
+        footer { background: var(--dark-gray); color: white; padding: 40px 0; margin-top: 50px; }
+        footer a { color: #bbb; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div id="nigerian-clock"><i class="far fa-clock me-2"></i>Loading Time...</div>
+            <div class="social-links">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+   <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <a class="navbar-brand mb-0 pb-0" href="#">
+                    SWEEP<span style="color:#222">TV</span>
+                    <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
+                </a>
+                <small class="text-muted d-none d-lg-block" style="font-size: 0.7rem; font-weight: 600;">
+                    Your No.1 Hub for APC News & Top Analysis
+                </small>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-danger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold text-danger" href="#" id="apcDrop" data-bs-toggle="dropdown">APC Central</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="nwc.html">NWC Updates</a></li>
+                            <li><a class="dropdown-item" href="roadmap.html">2027 Roadmap</a></li>
+                            <li><a class="dropdown-item" href="statechapters.html">State Chapters</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="nav-item"><a class="nav-link" href="Politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Business.html">Business </a></li>
+                    
+                    <li class="nav-item ms-lg-3"><a class="nav-link small text-muted border-start ps-lg-3" href="about.html">About Us</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="about-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">About Sweep TV Nigeria</h1>
+            <p class="lead">The Pulse of the Nation. The Voice of Progress.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <section class="mb-5">
+                    <h2 class="fw-bold mb-4">Who We Are</h2>
+                    <p>Sweep TV Nigeria is a premier digital media platform dedicated to providing comprehensive, unbiased, and up-to-the-minute news coverage with a specialized focus on the <strong>All Progressives Congress (APC)</strong> and Nigerian grassroots politics.</p>
+                    <p>Founded in Abuja, we have grown to become the most trusted source for party faithfuls, political analysts, and the general public who seek to understand the inner workings of the ruling party and the government's policy directions.</p>
+                </section>
+
+                <div class="mission-box mb-5">
+                    <h3 class="text-danger fw-bold">Our Mission</h3>
+                    <p class="mb-0">To "sweep" away misinformation by providing factual, evidence-based journalism that empowers Nigerian citizens and promotes democratic accountability through transparent reporting of political activities.</p>
+                </div>
+
+                <section>
+                    <h3 class="fw-bold mb-4">What We Cover</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-danger mt-1 me-2"></i>
+                                <p><strong>Exclusive APC Updates:</strong> Direct access to party conventions, policy shifts, and internal leadership insights.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-danger mt-1 me-2"></i>
+                                <p><strong>National Policy Analysis:</strong> Breaking down how government decisions affect the common Nigerian.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="stat-card mb-4">
+                    <h2 class="fw-bold text-danger">5M+</h2>
+                    <p class="mb-0">Monthly Readers</p>
+                </div>
+                <div class="stat-card mb-4">
+                    <h2 class="fw-bold text-danger">24/7</h2>
+                    <p class="mb-0">News Monitoring</p>
+                </div>
+                
+                <div class="card p-4 shadow-sm border-0">
+                    <h5 class="fw-bold">Follow Our Journey</h5>
+                    <p class="small text-muted">Stay connected for daily insights and live political coverage.</p>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-danger"><i class="fab fa-twitter me-2"></i>Follow on X</button>
+                        <button class="btn btn-dark"><i class="fab fa-youtube me-2"></i>Subscribe on YT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white">Sweep TV Nigeria</h5>
+                    <p class="small">Your No.1 source for APC trending stories, top analysis, and exclusive interviews.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white">Quick Links</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="advert-rates.html">Advert Rate</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white">Contact</h5>
+                    <p class="small">Email: info@sweeptvnigeria.com<br>Abuja, Nigeria</p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center small mb-0">&copy; 2026 Sweep TV Nigeria. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function updateTime() {
+            const options = { 
+                timeZone: 'Africa/Lagos', 
+                weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', 
+                hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true 
+            };
+            const formatter = new Intl.DateTimeFormat('en-GB', options);
+            document.getElementById('nigerian-clock').innerHTML = '<i class="far fa-clock me-2"></i>' + formatter.format(new Date()) + " (WAT)";
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

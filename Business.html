@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business | Sweep TV Nigeria - APC Policy & Enterprise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-red: #E53935;
+            --soft-bg: #f4f7f6;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --dark-blue: #1A237E;
+            --footer-dark: #111111;
+            --business-blue: #0D47A1;  /* accent for business */
+        }
+
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-bg); color: #333; }
+        
+        .navbar { background: #fff !important; border-bottom: 1px solid #eee; }
+        .navbar-brand { font-weight: 800; color: var(--primary-red) !important; }
+
+        /* Business Header */
+        .business-hero {
+            background: linear-gradient(145deg, #0a3d5e 0%, #1a4d7a 100%);
+            color: white;
+            padding: 60px 0;
+            border-radius: 0 0 40px 40px;
+            margin-bottom: 40px;
+        }
+
+        .fx-indicator {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #ffb74d;
+        }
+
+        /* News Cards */
+        .news-card {
+            background: white;
+            border-radius: 20px;
+            border: none;
+            transition: 0.3s;
+            margin-bottom: 25px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        .news-card:hover { transform: translateY(-5px); }
+        .tag-business { color: var(--business-blue); font-weight: 800; font-size: 0.7rem; text-transform: uppercase; }
+
+        /* Trending Sidebar */
+        .trending-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .trending-num { font-size: 1.5rem; font-weight: 800; color: #ddd; margin-right: 15px; }
+
+        /* Footer */
+        .footer-modern { 
+            background: var(--footer-dark); color: #fff; padding: 80px 0 30px; 
+            border-radius: 40px 40px 0 0; margin-top: 80px; 
+        }
+        .footer-link { color: #aaa; text-decoration: none; transition: 0.3s; display: block; margin-bottom: 10px; font-size: 0.9rem; }
+        .footer-link:hover { color: var(--primary-red); padding-left: 5px; }
+        
+        .newsletter-input { 
+            background: #222; border: 1px solid #333; color: #fff; 
+            border-radius: 30px; padding: 12px 20px; 
+        }
+
+        .indicator-box {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <a class="navbar-brand mb-0 pb-0" href="#">
+                    SWEEP<span style="color:#222">TV</span>
+                    <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
+                </a>
+                <small class="text-muted d-none d-lg-block" style="font-size: 0.7rem; font-weight: 600;">
+                    APC Business Dashboard & Enterprise Watch
+                </small>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-danger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold text-danger" href="#" id="apcDrop" data-bs-toggle="dropdown">APC Central</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="nwc.html">NWC Updates</a></li>
+                            <li><a class="dropdown-item" href="roadmap.html">2027 Roadmap</a></li>
+                            <li><a class="dropdown-item" href="statechapters.html">State Chapters</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Gassroots.html">Grassroots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-primary" href="Business.html">Business</a></li>
+                    
+                    <li class="nav-item ms-lg-3"><a class="nav-link small text-muted border-start ps-lg-3" href="about.html">About Us</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="business-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h6 class="text-uppercase fw-bold text-warning">APC BUSINESS INTELLIGENCE</h6>
+                    <h1 class="display-4 fw-bold">Renewed Hope for Enterprise: Growth & Investment Surge</h1>
+                    <p class="lead opacity-75">Tracking corporate reforms, FDI inflows, Dangote Refinery impact, NGX rally, and pathway to business-led $1tn+ economy by 2030.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="fx-indicator">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="small fw-bold">NAIRA/USD (OFFICIAL)</span>
+                            <span class="badge bg-warning text-dark">+0.4%</span>
+                        </div>
+                        <h2 class="fw-bold mb-0">₦1,405.00</h2>
+                        <small class="opacity-75">as at March 16, 2026 · NAFEM window</small>
+                        <hr class="opacity-25">
+                        <div class="d-flex justify-content-between">
+                            <span>Reserves: <strong>$39.2bn</strong></span>
+                            <span>Inflation: <strong class="text-success">15.1%</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- key business indicators row -->
+        <div class="row g-3 mb-5">
+            <div class="col-md-3">
+                <div class="indicator-box">
+                    <small class="text-muted">NGX All-Share Index (YTD 2026)</small>
+                    <h4 class="fw-bold mb-0">+18.2%</h4>
+                    <span class="badge bg-success bg-opacity-10 text-success mt-1"><i class="fas fa-arrow-up me-1"></i>Strong rally</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="indicator-box">
+                    <small class="text-muted">FDI Inflows (Q1 est.)</small>
+                    <h4 class="fw-bold mb-0">$2.8bn</h4>
+                    <span class="badge bg-success bg-opacity-10 text-success mt-1"><i class="fas fa-arrow-up me-1"></i>+15% YoY</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="indicator-box">
+                    <small class="text-muted">Power Generation Peak</small>
+                    <h4 class="fw-bold mb-0">7,200 MW</h4>
+                    <span class="badge bg-success bg-opacity-10 text-success mt-1"><i class="fas fa-arrow-up me-1"></i>Record high</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="indicator-box">
+                    <small class="text-muted">Policy Rate (MPR)</small>
+                    <h4 class="fw-bold mb-0">24.75%</h4>
+                    <span class="badge bg-danger bg-opacity-10 text-danger mt-1">CBN hold</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <h4 class="fw-bold mb-4 border-start border-primary border-4 ps-3">APC Business Agenda: Real News</h4>
+
+                <!-- News card 1 -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://ri-events-media-files.s3.amazonaws.com/logos/CentralBankNigeria.svg" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="CBN Business Reforms">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-business">INVESTMENT CLIMATE</span>
+                                <h4 class="fw-bold mt-2">CBN Reforms Attract $10bn+ Portfolio Inflows: FX Liquidity Boost for Businesses</h4>
+                                <p class="text-muted small">APC-backed managed float and new FX code draw foreign investors; manufacturing & tech sectors see improved access to dollars.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 3 hours ago</small>
+                                    <a href="#" class="ms-auto text-primary fw-bold text-decoration-none small">Read full <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News card 2 -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://i.pinimg.com/1200x/ba/5f/04/ba5f0458ff5be3551f9639d05d83486d.jpg" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Dangote Refinery">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-business">INDUSTRY & REFINING</span>
+                                <h4 class="fw-bold mt-2">Dangote Refinery Hits 650k bpd, Plans Stock Listing: Boost for Local Business & Jobs</h4>
+                                <p class="text-muted small">Africa's largest refinery reaches milestone; IPO expected soon, creating investment opportunities and reducing import costs for downstream firms.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 6 hours ago</small>
+                                    <a href="#" class="ms-auto text-primary fw-bold text-decoration-none small">Read full <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News card 3 -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://tse2.mm.bing.net/th/id/OIF.9LpoiBNjkhRhUfxt3FXqmg?rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Tax Reform">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-business">TAX & FISCAL</span>
+                                <h4 class="fw-bold mt-2">Taiwo Oyedele Tax Bills: Exemptions for SMEs, Incentives for Large Corporates</h4>
+                                <p class="text-muted small">APC caucus fast-tracks reforms; VAT adjustments protect low earners while boosting enterprise investment and compliance.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 1 day ago</small>
+                                    <a href="#" class="ms-auto text-primary fw-bold text-decoration-none small">Read full <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News card 4 -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://i.pinimg.com/1200x/02/fb/2d/02fb2d22973d411874bcecc8cdc447b8.jpg" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Power & Industry">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-business">ENERGY & MANUFACTURING</span>
+                                <h4 class="fw-bold mt-2">Power Hits 7,200MW Peak: APC Reforms Fuel Industrial Revival</h4>
+                                <p class="text-muted small">Record generation supports factories; CNG initiatives expand to business fleets, cutting logistics costs nationwide.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 2 days ago</small>
+                                    <a href="#" class="ms-auto text-primary fw-bold text-decoration-none small">Read intel <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDEBAR (right column) -->
+            <div class="col-lg-4">
+                <div class="sidebar-widget bg-white p-4 rounded-4 shadow-sm mb-4">
+                    <h5 class="fw-bold mb-4">Business Impact Tracker <i class="fas fa-chart-line text-primary ms-2"></i></h5>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">📈</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">NGX All-Share</h6>
+                            <small class="text-muted">+18% YTD on reform confidence</small>
+                        </div>
+                    </div>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">💰</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">FDI Inflows</h6>
+                            <small class="text-muted">up 15% driven by oil & tech</small>
+                        </div>
+                    </div>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">🏭</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Manufacturing PMI</h6>
+                            <small class="text-muted">expansion for 15+ months</small>
+                        </div>
+                    </div>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">🚀</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Dangote Refinery</h6>
+                            <small class="text-muted">650k bpd milestone, IPO soon</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget bg-white p-4 rounded-4 shadow-sm mb-4">
+                    <h5 class="fw-bold mb-4">APC Business Council</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 pb-2 border-bottom d-flex">
+                            <i class="fas fa-user-circle text-primary me-3 fs-4"></i>
+                            <div><strong>Wale Edun</strong><br><small class="text-muted">Finance Minister – 'Inclusive growth priority'</small></div>
+                        </li>
+                        <li class="mb-3 pb-2 border-bottom d-flex">
+                            <i class="fas fa-user-circle text-primary me-3 fs-4"></i>
+                            <div><strong>Olayemi Cardoso</strong><br><small class="text-muted">CBN Gov: 'Rates to ease for business'</small></div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-user-circle text-primary me-3 fs-4"></i>
+                            <div><strong>Heineken Lokpobiri</strong><br><small class="text-muted">Oil Minister: 'Refinery revolution underway'</small></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget bg-primary text-white p-4 rounded-4 shadow-sm" style="background: #0D47A1 !important;">
+                    <h5 class="fw-bold">APC Youth Enterprise</h5>
+                    <p class="small opacity-75">3M+ skills & startup jobs via 3E: Empower, Employ, Export initiative.</p>
+                    <button class="btn btn-light btn-sm w-100 fw-bold py-2">Join Enterprise Hub</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom row: more business briefs -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <hr>
+                <h5 class="fw-bold mb-4"><i class="fas fa-bolt text-warning me-2"></i>Quick Business Briefs</h5>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded-4 d-flex align-items-center">
+                    <i class="fas fa-hand-holding-usd fs-1 text-primary me-3"></i>
+                    <div><span class="fw-bold">$1.2bn</span> <small class="text-muted d-block">World Bank support for private sector (2026)</small></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded-4 d-flex align-items-center">
+                    <i class="fas fa-industry fs-1 text-primary me-3"></i>
+                    <div><span class="fw-bold">650k bpd</span> <small class="text-muted d-block">Dangote Refinery milestone</small></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded-4 d-flex align-items-center">
+                    <i class="fas fa-users fs-1 text-primary me-3"></i>
+                    <div><span class="fw-bold">3M+ jobs</span> <small class="text-muted d-block">Youth skills under APC 3E program</small></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo text-white text-decoration-none fs-3 fw-bold" href="#">SWEEP<span class="text-danger">TV</span></a>
+                    <p style="color: #cbcbcc;">Nigeria's premier digital media platform dedicated to comprehensive, unbiased coverage of the All Progressives Congress and national development.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">CATEGORIES</h6>
+                    <a href="#" class="footer-link">APC News</a>
+                    <a href="#" class="footer-link">2027 Tracker</a>
+                    <a href="#" class="footer-link">Governance</a>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">RESOURCES</h6>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Team</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-4">NEWSLETTER</h6>
+                    <div class="input-group">
+                        <input type="text" class="form-control newsletter-input" placeholder="Your email">
+                        <button class="btn btn-danger rounded-pill ms-2 px-4">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 text-center border-top border-secondary">
+                <p style="color: #aaa;">&copy; 2026 Sweep TV Nigeria. Truth. Progress. Democracy.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

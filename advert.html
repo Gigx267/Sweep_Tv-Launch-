@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Kit & Advert Rates | Sweep TV Nigeria</title>
+    <link rel="icon" type="image/png" href="LOGO.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-red: #E53935;
+            --gold: #D4AF37;
+            --soft-bg: #f8f9fa;
+            --card-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            --dark-pitch: #0a0a0a;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--soft-bg);
+            color: #1a1a1a;
+        }
+
+        /* Hero Section */
+        .rate-hero {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('./LOGO.PNG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 80px;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -60px;
+        }
+
+        /* Bento Grid Cards */
+        .bento-card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: var(--card-shadow);
+        }
+
+        .bento-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+        }
+
+        .price-text {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin: 20px 0;
+        }
+
+        .premium-border {
+            border: 2px solid var(--primary-red) !important;
+            position: relative;
+        }
+
+        .gold-tier {
+            background: var(--dark-pitch);
+            color: white;
+        }
+
+        .gold-text {
+            background: linear-gradient(45deg, #D4AF37, #F9E29C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        /* Comparison Table */
+        .comparison-wrapper {
+            background: white;
+            border-radius: 40px;
+            padding: 50px;
+            box-shadow: var(--card-shadow);
+            margin-top: 100px;
+        }
+
+        .table thead th {
+            background: #f1f1f1;
+            padding: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+        }
+
+        .table td {
+            padding: 25px 20px;
+            vertical-align: middle;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-back {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .cta-box {
+            background: var(--primary-red);
+            border-radius: 40px;
+            padding: 60px;
+            color: white;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .feature-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+
+        .feature-list i {
+            color: var(--primary-red);
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+
+        .gold-tier .feature-list i {
+            color: var(--gold);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="rate-hero text-center">
+        <a href="index.html" class="nav-back"><i class="fas fa-arrow-left me-2"></i> Return to Newsroom</a>
+        <div class="container">
+            <h6 class="text-uppercase fw-bold mb-3" style="letter-spacing: 3px; color: var(--primary-red);">Confidential Media Kit 2026</h6>
+            <h1 class="display-3 fw-bold">Strategic Political <br><span style="color: var(--gold);">Influence</span> & Impact</h1>
+            <p class="lead opacity-75 mt-3 max-width-700 mx-auto">
+                Sweep TV is not just a news portal; it is the digital command center for the 2027 election cycle. Reach decision-makers in Abuja and beyond.
+            </p>
+        </div>
+    </header>
+
+    <main class="container" style="position: relative; z-index: 10;">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="bento-card">
+                    <h6 class="fw-bold text-muted">CAMPAIGN STARTUP</h6>
+                    <h2 class="fw-bold">Narrative Setter</h2>
+                    <p class="small text-muted">Perfect for political entrants looking to build immediate authority.</p>
+                    <div class="price-text">₦2.5M <span class="fs-6 fw-normal text-muted">/ Month</span></div>
+                    <hr>
+                    <ul class="list-unstyled feature-list">
+                        <li><i class="fas fa-check-circle"></i> 4 Professional "Intel" Features</li>
+                        <li><i class="fas fa-check-circle"></i> Sidebar Trending Placement</li>
+                        <li><i class="fas fa-check-circle"></i> Weekly Ticker Mention</li>
+                        <li><i class="fas fa-check-circle"></i> Social Media Push (2 Platforms)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="bento-card premium-border">
+                    <span class="badge bg-danger position-absolute top-0 start-50 translate-middle px-4 py-2 rounded-pill">MOST POWERFUL</span>
+                    <h6 class="fw-bold text-muted">INSTITUTIONAL HUB</h6>
+                    <h2 class="fw-bold">The Roadmap Partnership</h2>
+                    <p class="small text-muted">Full branding of the 2027 Roadmap section. For Governors & MDAs.</p>
+                    <div class="price-text text-danger">₦8.5M <span class="fs-6 fw-normal text-muted">/ Quarter</span></div>
+                    <hr>
+                    <ul class="list-unstyled feature-list">
+                        <li><i class="fas fa-star"></i> Exclusive "Section Ownership"</li>
+                        <li><i class="fas fa-star"></i> Monthly Video Documentary (15 Mins)</li>
+                        <li><i class="fas fa-star"></i> Hero Slider Priority (Top of Site)</li>
+                        <li><i class="fas fa-star"></i> Monthly Data Analytics Report</li>
+                        <li><i class="fas fa-star"></i> Crisis Management Support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="bento-card gold-tier">
+                    <h6 class="fw-bold text-warning">ELITE TAKEOVER</h6>
+                    <h2 class="fw-bold gold-text">Presidential Sweep</h2>
+                    <p class="small text-white-50">Total narrative dominance. We become your dedicated digital press wing.</p>
+                    <div class="price-text text-warning">₦25M <span class="fs-6 fw-normal text-white-50">/ Per Annum</span></div>
+                    <hr class="border-secondary">
+                    <ul class="list-unstyled feature-list">
+                        <li><i class="fas fa-crown"></i> Dedicated Project Sub-domain</li>
+                        <li><i class="fas fa-crown"></i> Unlimited Press Releases</li>
+                        <li><i class="fas fa-crown"></i> 24/7 Homepage Takeover Rights</li>
+                        <li><i class="fas fa-crown"></i> Direct Access to Editorial Board</li>
+                        <li><i class="fas fa-crown"></i> VIP Voter Data Insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison-wrapper">
+            <h3 class="fw-bold mb-4">Market Comparison <i class="fas fa-chart-pie ms-2 text-danger"></i></h3>
+            <p class="text-muted mb-5">Why digital influence on Sweep TV outperforms traditional TVC airtime spend.</p>
+            
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Service Category</th>
+                            <th>Traditional TV (TVC/AIT)</th>
+                            <th>Sweep TV Digital</th>
+                            <th>Value Multiplier</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Prime Time Coverage</td>
+                            <td>₦450,000 <br><small class="text-muted fw-normal">Per 60-Second Slot</small></td>
+                            <td class="fw-bold text-danger">₦3,500,000 <br><small class="text-muted fw-normal">Permanent Feature</small></td>
+                            <td><span class="badge bg-light text-dark border">Lifetime SEO Reach</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Political Documentary</td>
+                            <td>₦5,500,000 <br><small class="text-muted fw-normal">One-time Broadcast</small></td>
+                            <td class="fw-bold text-danger">₦2,500,000 <br><small class="text-muted fw-normal">Unlimited Views</small></td>
+                            <td><span class="badge bg-light text-dark border">Viral Shareability</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Branding/Ticker</td>
+                            <td>₦65,000 <br><small class="text-muted fw-normal">Per Single Scroll</small></td>
+                            <td class="fw-bold text-danger">₦1,200,000 <br><small class="text-muted fw-normal">Full Month 24/7</small></td>
+                            <td><span class="badge bg-light text-dark border">High Frequency</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+
+    <footer class="py-5 mt-5 text-center text-muted">
+        <p class="small">&copy; 2026 Sweep TV Nigeria </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

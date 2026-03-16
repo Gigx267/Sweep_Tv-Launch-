@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grassroots Strength | Sweep TV Nigeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-red: #E53935;
+            --dark-blue: #1A237E;
+            --soft-bg: #f4f7f6;
+            --footer-dark: #111111;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--soft-bg);
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* Top Bar Sync */
+        .top-bar { background: #fff; border-bottom: 1px solid #eee; padding: 8px 0; font-size: 0.85rem; }
+        
+        /* Navbar */
+        .navbar { 
+            background: rgba(255, 255, 255, 0.95) !important; 
+            backdrop-filter: blur(10px); 
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
+        }
+        .navbar-brand { font-weight: 800; color: var(--primary-red) !important; font-size: 1.8rem; }
+
+        /* Hero Section */
+        .grassroots-hero {
+            background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(229, 57, 53, 0.85)), url('https://images.unsplash.com/photo-1540910419892-f0c742c35343?q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 100px;
+            text-align: center;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+            margin-top: -60px;
+            border: none;
+        }
+
+        .merger-box {
+            background: #fdf2f2;
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid #fee2e2;
+            transition: 0.3s;
+        }
+        .merger-box:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(229, 57, 53, 0.1); }
+
+        .timeline-item {
+            border-left: 4px solid var(--primary-red);
+            padding-left: 25px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -11px;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            background: var(--primary-red);
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .highlight-text {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--dark-blue);
+            border-left: 5px solid var(--primary-red);
+            padding-left: 20px;
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer-modern { 
+            background: var(--footer-dark); color: #fff; padding: 60px 0 30px; 
+            border-radius: 40px 40px 0 0; margin-top: 80px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div id="nigerian-clock" class="text-muted fw-bold"></div>
+            <div class="social-icons">
+                <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-muted me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <a class="navbar-brand mb-0 pb-0" href="#">
+                    SWEEP<span style="color:#222">TV</span>
+                    <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
+                </a>
+                <small class="text-muted d-none d-lg-block" style="font-size: 0.7rem; font-weight: 600;">
+                    Your No.1 Hub for APC News & Top Analysis
+                </small>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-danger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold text-danger" href="#" id="apcDrop" data-bs-toggle="dropdown">APC Central</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="nwc.html">NWC Updates</a></li>
+                            <li><a class="dropdown-item" href="roadmap.html">2027 Roadmap</a></li>
+                            <li><a class="dropdown-item" href="statechapters.html">State Chapters</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="nav-item"><a class="nav-link" href="Politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Business.html">Business </a></li>
+                    
+                    <li class="nav-item ms-lg-3"><a class="nav-link small text-muted border-start ps-lg-3" href="about.html">About Us</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+
+    <header class="grassroots-hero">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Inside APC: Grassroots Strength</h1>
+            <p class="lead text-uppercase fw-semibold" style="letter-spacing: 2px;">The Foundation of Nigeria’s Ruling Party</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="content-card">
+                    
+                    <section class="mb-5">
+                        <p class="highlight-text mb-5">
+                            The All Progressives Congress (APC) remains one of Nigeria’s most influential political forces, with a foundation deeply rooted in grassroots mobilization and national unity.
+                        </p>
+                        
+                        <h3 class="fw-bold mb-4">The Historic 2013 Mega-Merger 🇳🇬</h3>
+                        <p>Formed in 2013, the APC emerged from a historic merger of major opposition parties, including the <strong>Action Congress of Nigeria (ACN)</strong>, <strong>Congress for Progressive Change (CPC)</strong>, and <strong>All Nigeria Peoples Party (ANPP)</strong>. This historic coalition was created with a single, clear objective: to challenge the long-standing dominance of the People’s Democratic Party (PDP) and offer Nigerians a fresh, progressive political direction.</p>
+                        
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-4">
+                                <div class="merger-box text-center h-100">
+                                    <i class="fas fa-handshake stat-icon"></i>
+                                    <h5 class="fw-bold">ACN</h5>
+                                    <p class="small text-muted mb-0">Brought the administrative expertise and Southwest political machinery.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="merger-box text-center h-100">
+                                    <i class="fas fa-fist-raised stat-icon"></i>
+                                    <h5 class="fw-bold">CPC</h5>
+                                    <p class="small text-muted mb-0">Contributed a massive, loyalist voter base across the Northern regions.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="merger-box text-center h-100">
+                                    <i class="fas fa-landmark stat-icon"></i>
+                                    <h5 class="fw-bold">ANPP</h5>
+                                    <p class="small text-muted mb-0">Provided deep institutional experience and nationwide legislative structures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <h3 class="fw-bold mb-4">Mobilizing the Common Citizen</h3>
+                        <p>From its inception, the APC leveraged strong grassroots structures inherited from its merging parties. With networks spanning across all 36 states, 774 local governments, and thousands of communities, the party quickly gained support among youths, traders, and political stakeholders nationwide.</p>
+                        <p>Unlike traditional political entities that focus solely on urban centers, the APC’s strength lies in its <strong>Ward-Level Engagement</strong>. By empowering local leaders, the party ensures that its "Renewed Hope" message resonates at the very heart of the Nigerian electorate.</p>
+                    </section>
+
+                    <section class="mb-5">
+                        <div class="timeline-item">
+                            <h4 class="fw-bold text-danger">2015: A Historic Power Shift</h4>
+                            <p>The party’s defining moment came during the 2015 general elections when <strong>Muhammadu Buhari</strong> secured a historic presidential victory under the APC platform. This marked the first time an opposition party defeated an incumbent government in Nigeria, signaling a major shift in the country’s democratic journey and proving the effectiveness of grassroots mobilization.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4 class="fw-bold text-danger">2023 - 2026: The Renewed Hope Era</h4>
+                            <p>Since its initial victory, the APC has maintained a dominant presence in Nigeria’s political landscape, controlling the federal government and expanding its influence across multiple states. Under the current administration of <strong>President Bola Ahmed Tinubu</strong>, the party continues to promote its “Renewed Hope” agenda, focusing on aggressive economic growth, infrastructure development, and national stability.</p>
+                        </div>
+                    </section>
+
+                    <div class="bg-dark text-white p-5 rounded-4 mt-5 mb-5 shadow-lg">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="fw-bold text-danger">The Pulse of Success</h3>
+                                <p class="opacity-75">Political analysts attribute APC’s sustained success to its deep grassroots connections, strategic alliances, and ability to adapt to Nigeria’s evolving political climate. By prioritizing youth inclusion and digital registration, the party remains future-ready.</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <i class="fas fa-chart-line fa-5x text-danger opacity-50"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="text-center">
+                        <h3 class="fw-bold mb-3">A Central Force in Democracy</h3>
+                        <p class="text-muted mx-auto" style="max-width: 800px;">
+                            As Nigeria looks ahead to future elections, the APC remains a central force shaping the nation’s governance and democratic process. Its ability to unify diverse regional interests under a single progressive banner continues to define the modern era of Nigerian politics.
+                        </p>
+                        <a href="roadmap.html" class="btn btn-danger rounded-pill px-5 py-3 fw-bold mt-4 shadow">Explore the 2027 Roadmap</a>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-modern">
+        <div class="container text-center">
+            <h5 class="fw-bold">SWEEP<span class="text-danger">TV</span></h5>
+            <p style="color: #aaa;">Truth. Progress. Democracy.</p>
+            <hr class="border-secondary my-4">
+            <p class="small mb-0" style="color: #888;">&copy; 2026 Sweep TV Nigeria. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateTime() {
+            const options = { 
+                timeZone: 'Africa/Lagos', weekday: 'long', year: 'numeric', 
+                month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
+            };
+            const clock = document.getElementById('nigerian-clock');
+            if(clock) clock.innerText = new Intl.DateTimeFormat('en-NG', options).format(new Date()) + " WAT";
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>

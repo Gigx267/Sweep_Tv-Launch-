@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy | Sweep TV Nigeria - APC Policy & Finance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-red: #E53935;
+            --soft-bg: #f4f7f6;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --dark-blue: #1A237E;
+            --footer-dark: #111111;
+            --economy-green: #2E7D32;  /* additional accent for economy */
+        }
+
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-bg); color: #333; }
+        
+        .navbar { background: #fff !important; border-bottom: 1px solid #eee; }
+        .navbar-brand { font-weight: 800; color: var(--primary-red) !important; }
+
+        /* Economy Header */
+        .economy-hero {
+            background: linear-gradient(145deg, #0a3d2e 0%, #1a4d3a 100%);
+            color: white;
+            padding: 60px 0;
+            border-radius: 0 0 40px 40px;
+            margin-bottom: 40px;
+        }
+
+        .fx-indicator {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #ffb74d;
+        }
+
+        /* News Cards */
+        .news-card {
+            background: white;
+            border-radius: 20px;
+            border: none;
+            transition: 0.3s;
+            margin-bottom: 25px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        .news-card:hover { transform: translateY(-5px); }
+        .tag-economy { color: var(--economy-green); font-weight: 800; font-size: 0.7rem; text-transform: uppercase; }
+
+        /* Trending Sidebar */
+        .trending-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .trending-num { font-size: 1.5rem; font-weight: 800; color: #ddd; margin-right: 15px; }
+
+        /* Footer */
+        .footer-modern { 
+            background: var(--footer-dark); color: #fff; padding: 80px 0 30px; 
+            border-radius: 40px 40px 0 0; margin-top: 80px; 
+        }
+        .footer-link { color: #aaa; text-decoration: none; transition: 0.3s; display: block; margin-bottom: 10px; font-size: 0.9rem; }
+        .footer-link:hover { color: var(--primary-red); padding-left: 5px; }
+        
+        .newsletter-input { 
+            background: #222; border: 1px solid #333; color: #fff; 
+            border-radius: 30px; padding: 12px 20px; 
+        }
+
+        .indicator-box {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <a class="navbar-brand mb-0 pb-0" href="#">
+                    SWEEP<span style="color:#222">TV</span>
+                    <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
+                </a>
+                <small class="text-muted d-none d-lg-block" style="font-size: 0.7rem; font-weight: 600;">
+                    APC Economic Dashboard & Policy Watch
+                </small>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-danger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold text-danger" href="#" id="apcDrop" data-bs-toggle="dropdown">APC Central</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="nwc.html">NWC Updates</a></li>
+                            <li><a class="dropdown-item" href="roadmap.html">2027 Roadmap</a></li>
+                            <li><a class="dropdown-item" href="statechapters.html">State Chapters</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Gassroots.html">Grassroots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Business.html">Business </a></li>
+                    
+                    <li class="nav-item ms-lg-3"><a class="nav-link small text-muted border-start ps-lg-3" href="about.html">About Us</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="economy-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h6 class="text-uppercase fw-bold text-warning">APC ECONOMIC INTELLIGENCE</h6>
+                    <h1 class="display-4 fw-bold">The Renewed Hope Agenda: Numbers & Reforms</h1>
+                    <p class="lead opacity-75">Tracking fiscal policy, naira volatility, fuel subsidy removal impact, and the path to $1tn GDP by 2030.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="fx-indicator">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="small fw-bold">NAIRA/USD (OFFICIAL)</span>
+                            <span class="badge bg-warning text-dark">+0.8%</span>
+                        </div>
+                        <h2 class="fw-bold mb-0">₦1,482.50</h2>
+                        <small class="opacity-75">as at March 16, 2026 · NAFEM window</small>
+                        <hr class="opacity-25">
+                        <div class="d-flex justify-content-between">
+                            <span>Reserves: <strong>$39.2bn</strong></span>
+                            <span>Inflation: <strong class="text-warning">22.6%</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- key economic indicators row -->
+        <div class="row g-3 mb-5">
+            <div class="col-md-3">
+                <div class="indicator-box">
+                    <small class="text-muted">GDP growth (Q4 2025)</small>
+                    <h4 class="fw-bold mb-0">3.84%</h4>
+                    <span class="badge bg-success bg-opacity-10 text-success mt-1"><i class="fas fa-arrow-up me-1"></i>+0.5%</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="indicator-box">
+                    <small class="text-muted">Oil production (mbpd)</small>
+                    <h4 class="fw-bold mb-0">1.67</h4>
+                    <span class="badge bg-warning bg-opacity-10 text-warning mt-1"><i class="fas fa-minus me-1"></i>stabilising</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="indicator-box">
+                    <small class="text-muted">External reserves</small>
+                    <h4 class="fw-bold mb-0">$39.2bn</h4>
+                    <span class="badge bg-success bg-opacity-10 text-success mt-1"><i class="fas fa-arrow-up me-1"></i>+2% (YTD)</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="indicator-box">
+                    <small class="text-muted">Policy rate (MPR)</small>
+                    <h4 class="fw-bold mb-0">24.75%</h4>
+                    <span class="badge bg-danger bg-opacity-10 text-danger mt-1">hold by CBN</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <h4 class="fw-bold mb-4 border-start border-success border-4 ps-3">APC Economic Agenda: Real News</h4>
+
+                <!-- News card 1 -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://ri-events-media-files.s3.amazonaws.com/logos/CentralBankNigeria.svg " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Central Bank of Nigeria">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-economy">MONETARY POLICY</span>
+                                <h4 class="fw-bold mt-2">CBN Unifies Exchange Rates, Allows Naira to Float Within Managed Band</h4>
+                                <p class="text-muted small">In a major policy shift backed by the presidency, the Central Bank introduces a new FX code to boost liquidity and attract $10bn in portfolio inflows before Q3 2026.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 2 hours ago</small>
+                                    <a href="#" class="ms-auto text-success fw-bold text-decoration-none small">Read full <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News card 2 -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://i.pinimg.com/1200x/ba/5f/04/ba5f0458ff5be3551f9639d05d83486d.jpg " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Oil and Gas">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-economy">ENERGY & SUBSIDY</span>
+                                <h4 class="fw-bold mt-2">Fuel Subsidy Removal: NNPC Reports ₦4.2tr Savings, Palliatives Face Criticism</h4>
+                                <p class="text-muted small">APC lauds the 'courageous' reform as transport unions demand more relief. New CNG conversion centres open in 14 states under presidential initiative.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 5 hours ago</small>
+                                    <a href="#" class="ms-auto text-success fw-bold text-decoration-none small">Read full <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News card 3 -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://i.pinimg.com/1200x/02/fb/2d/02fb2d22973d411874bcecc8cdc447b8.jpg " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Agriculture">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-economy">FOOD SECURITY</span>
+                                <h4 class="fw-bold mt-2">Dry Season Farming: APC-led States Launch 500,000 Hectares for Wheat & Rice</h4>
+                                <p class="text-muted small">Governors in Kebbi, Jigawa, and Taraba partner with AFDB to crash grain prices. Target: 2.5mm metric tons before 2026 harvest.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 1 day ago</small>
+                                    <a href="#" class="ms-auto text-success fw-bold text-decoration-none small">Read full <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News card 4: Labour & tax -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://tse2.mm.bing.net/th/id/OIF.9LpoiBNjkhRhUfxt3FXqmg?rs=1&pid=ImgDetMain&o=7&rm=3 " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Tax reform">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-economy">FISCAL REFORM</span>
+                                <h4 class="fw-bold mt-2">Taiwo Oyedele: 'Emergency Economic Bill Will Raise VAT but Exempt Low-Income Earners'</h4>
+                                <p class="text-muted small">The Fiscal Policy Committee chairman meets with APC caucus to fast-track four tax bills; new increment in development levies expected for large corporations.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 2 days ago</small>
+                                    <a href="#" class="ms-auto text-success fw-bold text-decoration-none small">Read intel <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDEBAR (right column) -->
+            <div class="col-lg-4">
+                <div class="sidebar-widget bg-white p-4 rounded-4 shadow-sm mb-4">
+                    <h5 class="fw-bold mb-4">Policy Impact Tracker <i class="fas fa-chart-pie text-success ms-2"></i></h5>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">⬆️</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Petrol imports</h6>
+                            <small class="text-muted">down 32% (YoY) due to Dangote refinery</small>
+                        </div>
+                    </div>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">⬇️</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Food inflation</h6>
+                            <small class="text-muted">marginal dip to 28.4% after harvests</small>
+                        </div>
+                    </div>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">📈</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Stock market (NGX)</h6>
+                            <small class="text-muted">All-share index +14% in 2026</small>
+                        </div>
+                    </div>
+                    <div class="trending-item d-flex align-items-center">
+                        <span class="trending-num">💼</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Foreign reserves</h6>
+                            <small class="text-muted">highest since 2022 ($39.2bn)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget bg-white p-4 rounded-4 shadow-sm mb-4">
+                    <h5 class="fw-bold mb-4">APC Economic Council</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 pb-2 border-bottom d-flex">
+                            <i class="fas fa-user-circle text-success me-3 fs-4"></i>
+                            <div><strong>Wale Edun</strong><br><small class="text-muted">Finance Minister – 'Fiscal discipline non-negotiable'</small></div>
+                        </li>
+                        <li class="mb-3 pb-2 border-bottom d-flex">
+                            <i class="fas fa-user-circle text-success me-3 fs-4"></i>
+                            <div><strong>Olayemi Cardoso</strong><br><small class="text-muted">CBN Gov: 'Interest rates to moderate by Q4'</small></div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="fas fa-user-circle text-success me-3 fs-4"></i>
+                            <div><strong>Heineken Lokpobiri</strong><br><small class="text-muted">Oil minister touts 2mbpd target for 2027</small></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget bg-success text-white p-4 rounded-4 shadow-sm" style="background: #0f5132 !important;">
+                    <h5 class="fw-bold">APC Youth & Skills</h5>
+                    <p class="small opacity-75">3 million technical jobs created under 3E initiative: Empower, Employ, Export.</p>
+                    <button class="btn btn-light btn-sm w-100 fw-bold py-2">Access Opportunity</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom row: more economic briefs -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <hr>
+                <h5 class="fw-bold mb-4"><i class="fas fa-bolt text-warning me-2"></i>Quick Economic Briefs</h5>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded-4 d-flex align-items-center">
+                    <i class="fas fa-chart-line fs-1 text-success me-3"></i>
+                    <div><span class="fw-bold">$1.2bn</span> <small class="text-muted d-block">World Bank budget support (April 2026)</small></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded-4 d-flex align-items-center">
+                    <i class="fas fa-industry fs-1 text-success me-3"></i>
+                    <div><span class="fw-bold">7,200MW</span> <small class="text-muted d-block">peak power generation (March record)</small></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded-4 d-flex align-items-center">
+                    <i class="fas fa-truck fs-1 text-success me-3"></i>
+                    <div><span class="fw-bold">₦65,000</span> <small class="text-muted d-block">new minimum wage implementation begins</small></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo text-white text-decoration-none fs-3 fw-bold" href="#">SWEEP<span class="text-danger">TV</span></a>
+                    <p style="color: #cbcbcc;">Nigeria's premier digital media platform dedicated to comprehensive, unbiased coverage of the All Progressives Congress and national development.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">CATEGORIES</h6>
+                    <a href="#" class="footer-link">APC News</a>
+                    <a href="#" class="footer-link">2027 Tracker</a>
+                    <a href="#" class="footer-link">Governance</a>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">RESOURCES</h6>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Team</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-4">NEWSLETTER</h6>
+                    <div class="input-group">
+                        <input type="text" class="form-control newsletter-input" placeholder="Your email">
+                        <button class="btn btn-danger rounded-pill ms-2 px-4">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 text-center border-top border-secondary">
+                <p style="color: #aaa;">&copy; 2026 Sweep TV Nigeria. Truth. Progress. Democracy.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

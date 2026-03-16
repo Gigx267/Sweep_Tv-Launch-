@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APC Leadership | Sweep TV Nigeria - Complete Directory</title>
+    <link rel="icon" type="image/png" href="LOGO.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-red: #E53935;
+            --soft-bg: #f4f7f6;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --dark-blue: #1A237E;
+            --footer-dark: #111111;
+            --leadership-gold: #c49b1f;
+            --gov-green: #2E7D32;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--soft-bg);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+        .animate-pulse { animation: pulse 2s infinite; }
+
+        .top-bar { background: #fff; border-bottom: 1px solid #eee; padding: 8px 0; font-size: 0.85rem; }
+        
+        .navbar { 
+            background: rgba(255, 255, 255, 0.95) !important; 
+            backdrop-filter: blur(10px); 
+            padding: 12px 0; 
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
+        }
+
+        .navbar-brand { font-weight: 800; letter-spacing: -1px; font-size: 1.8rem; color: var(--primary-red) !important; }
+        .nav-link { font-weight: 600; color: #444 !important; transition: 0.3s; font-size: 0.95rem; }
+        .nav-link:hover { color: var(--primary-red) !important; }
+
+        .ticker-wrap { 
+            background: #fff; 
+            padding: 12px; 
+            border-radius: 50px; 
+            box-shadow: var(--card-shadow); 
+            margin-bottom: 30px; 
+            display: flex; 
+            align-items: center; 
+        }
+        .ticker-label { 
+            background: var(--primary-red); 
+            color: white; 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            font-weight: bold; 
+            font-size: 0.75rem; 
+            margin-right: 15px; 
+            white-space: nowrap;
+        }
+
+        /* Leadership header */
+        .leadership-hero {
+            background: linear-gradient(145deg, #0a2a44 0%, #1a2e4f 100%);
+            color: white;
+            padding: 40px 0;
+            border-radius: 30px;
+            margin-bottom: 40px;
+            border-left: 8px solid var(--leadership-gold);
+        }
+
+        .section-title {
+            font-weight: 800;
+            margin: 40px 0 25px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary-red);
+            display: inline-block;
+        }
+
+        .leader-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
+            transition: 0.3s;
+            border-left: 4px solid transparent;
+        }
+        .leader-card:hover {
+            transform: translateY(-3px);
+            border-left-color: var(--primary-red);
+        }
+        .leader-role {
+            color: var(--primary-red);
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .leader-name {
+            font-weight: 800;
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+        .leader-state {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .state-grid {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+
+        .state-item {
+            padding: 12px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .state-item:last-child { border-bottom: none; }
+        .state-name { font-weight: 700; color: var(--dark-blue); }
+        .chairman-name { font-weight: 600; }
+        .chairman-name small { font-weight: normal; color: #777; }
+
+        .badge-apc { background: var(--dark-blue); color: white; padding: 3px 8px; border-radius: 20px; font-size: 0.7rem; }
+
+        .footer-modern { 
+            background: var(--footer-dark); color: #fff; padding: 80px 0 30px; 
+            border-radius: 40px 40px 0 0; margin-top: 80px; 
+        }
+        .footer-link { color: #aaa; text-decoration: none; transition: 0.3s; display: block; margin-bottom: 10px; font-size: 0.9rem; }
+        .footer-link:hover { color: var(--primary-red); padding-left: 5px; }
+        
+        .newsletter-input { 
+            background: #222; border: 1px solid #333; color: #fff; 
+            border-radius: 30px; padding: 12px 20px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div id="nigerian-clock" class="text-muted fw-bold"></div>
+            <div class="social-icons">
+                <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-muted me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <a class="navbar-brand mb-0 pb-0" href="index.html">
+                    SWEEP<span style="color:#222">TV</span>
+                    <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
+                </a>
+                <small class="text-muted d-none d-lg-block" style="font-size: 0.7rem; font-weight: 600;">
+                    Complete Directory: APC Leaders & Office Holders
+                </small>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-danger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold text-danger" href="#" id="apcDrop" data-bs-toggle="dropdown">APC Central</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="nwc.html">NWC Updates</a></li>
+                            <li><a class="dropdown-item" href="roadmap.html">2027 Roadmap</a></li>
+                            <li><a class="dropdown-item" href="statechapters.html">State Chapters</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Gassroots.html">Grassroots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Business.html">Business </a></li>
+                    
+                    <li class="nav-item ms-lg-3"><a class="nav-link small text-muted border-start ps-lg-3" href="about.html">About Us</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <div class="ticker-wrap">
+            <span class="ticker-label">LEADERSHIP DIRECTORY</span>
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="font-weight: 600; font-size: 0.9rem;">
+                • 20 APC Governors • 59 APC Senators • 36 State Chairmen (March 2026 congresses) • Updated following Ogun, Kaduna, Cross River congresses
+            </marquee>
+        </div>
+
+        <!-- Header -->
+        <div class="leadership-hero p-4 p-md-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-warning text-dark mb-3">AUTHORITATIVE DIRECTORY 2026</span>
+                    <h1 class="display-5 fw-bold">APC Leadership & Elected Officials</h1>
+                    <p class="lead opacity-75">Complete list of all APC governors, NWC members, Senate caucus, and state chairmen. Updated March 2026 following state congresses.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-white bg-opacity-10 p-4 rounded-4 text-center">
+                        <span class="display-3 fw-bold text-warning">20</span>
+                        <p class="mb-0">APC Governors</p>
+                        <span class="display-6 fw-bold text-warning">59</span>
+                        <p class="mb-0">APC Senators</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NATIONAL EXECUTIVE (NWC) -->
+        <h2 class="section-title"><i class="fas fa-flag me-2" style="color: var(--primary-red);"></i>NATIONAL WORKING COMMITTEE (NWC)</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="leader-card">
+                    <div class="leader-role">National Chairman</div>
+                    <div class="leader-name">Dr. Abdullahi Umar Ganduje</div>
+                    <div class="leader-state">Former Kano Governor</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="leader-card">
+                    <div class="leader-role">National Secretary</div>
+                    <div class="leader-name">Sen. Ajibola Basiru</div>
+                    <div class="leader-state">Former Senate Spokesman</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="leader-card">
+                    <div class="leader-role">Deputy Chairman (North)</div>
+                    <div class="leader-name">Ali Bukar Dalori</div>
+                    <div class="leader-state">Borno</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="leader-card">
+                    <div class="leader-role">Deputy Chairman (South)</div>
+                    <div class="leader-name">Emma Eneukwu</div>
+                    <div class="leader-state">Enugu</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="leader-card">
+                    <div class="leader-role">National Legal Adviser</div>
+                    <div class="leader-name">Dr. Abdulkarim Kana</div>
+                    <div class="leader-state">Nasarawa</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="leader-card">
+                    <div class="leader-role">National Treasurer</div>
+                    <div class="leader-name">Gov. Hope Uzodimma</div>
+                    <div class="leader-state">Imo (convention committee) [citation:2][citation:8]</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GOVERNORS SECTION -->
+        <h2 class="section-title"><i class="fas fa-building me-2" style="color: var(--gov-green);"></i>APC GOVERNORS (20 STATES)</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Hope Uzodimma</div>
+                    <div class="leader-state">Imo State</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Babajide Sanwo-Olu</div>
+                    <div class="leader-state">Lagos State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Dapo Abiodun</div>
+                    <div class="leader-state">Ogun State [citation:2][citation:9]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">AbdulRahman AbdulRazaq</div>
+                    <div class="leader-state">Kwara State [citation:2][citation:4]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Babagana Zulum</div>
+                    <div class="leader-state">Borno State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Uba Sani</div>
+                    <div class="leader-state">Kaduna State [citation:2][citation:5]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Ahmed Usman Ododo</div>
+                    <div class="leader-state">Kogi State [citation:2][citation:8]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Bassey Otu</div>
+                    <div class="leader-state">Cross River State [citation:1][citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Francis Nwifuru</div>
+                    <div class="leader-state">Ebonyi State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Monday Okpebholo</div>
+                    <div class="leader-state">Edo State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Abiodun Oyebanji</div>
+                    <div class="leader-state">Ekiti State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Muhammed Inuwa Yahaya</div>
+                    <div class="leader-state">Gombe State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Umar Namadi</div>
+                    <div class="leader-state">Jigawa State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Dikko Umaru Radda</div>
+                    <div class="leader-state">Katsina State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Nasir Idris</div>
+                    <div class="leader-state">Kebbi State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Abdullahi Sule</div>
+                    <div class="leader-state">Nasarawa State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Mohammed Umar Bago</div>
+                    <div class="leader-state">Niger State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Hyacinth Alia</div>
+                    <div class="leader-state">Benue State [citation:2]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Ahmed Aliyu</div>
+                    <div class="leader-state">Sokoto State [citation:4]</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="leader-card">
+                    <div class="leader-role">Governor</div>
+                    <div class="leader-name">Lucky Aiyedatiwa</div>
+                    <div class="leader-state">Ondo State [citation:4]</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SENATE LEADERSHIP & APC SENATORS -->
+        <h2 class="section-title"><i class="fas fa-university me-2" style="color: var(--leadership-gold);"></i>APC SENATE CAUCUS (59 SENATORS)</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+                <div class="leader-card">
+                    <div class="leader-role">Senate President</div>
+                    <div class="leader-name">Godswill Akpabio</div>
+                    <div class="leader-state">Akwa Ibom North-West [citation:4]</div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-role">Deputy Senate President</div>
+                    <div class="leader-name">Barau Jibrin</div>
+                    <div class="leader-state">Kano North [citation:4]</div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-role">Majority Leader</div>
+                    <div class="leader-name">Opeyemi Bamidele</div>
+                    <div class="leader-state">Ekiti Central [citation:4]</div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-role">Majority Whip</div>
+                    <div class="leader-name">Orji Uzor Kalu</div>
+                    <div class="leader-state">Abia North [citation:3]</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light p-4 rounded-4">
+                    <p class="fw-bold">Selected APC Senators (as of March 2026):</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="badge-apc me-2">APC</span> Ahmad Lawan (Yobe North) [citation:3]</li>
+                        <li class="mb-2"><span class="badge-apc me-2">APC</span> Tokunbo Abiru (Lagos East) [citation:3]</li>
+                        <li class="mb-2"><span class="badge-apc me-2">APC</span> Sani Musa (Niger East) [citation:3]</li>
+                        <li class="mb-2"><span class="badge-apc me-2">APC</span> Aliyu Sabi Abdullahi (Niger North) [citation:3]</li>
+                        <li class="mb-2"><span class="badge-apc me-2">APC</span> Robert Ajayi Boroffice (Ondo North) [citation:3]</li>
+                        <li class="mb-2"><span class="badge-apc me-2">APC</span> Frank Ibezim (Imo North) [citation:3]</li>
+                        <li class="mb-2"><span class="badge-apc me-2">APC</span> Nora Daduut (Plateau South) [citation:3]</li>
+                    </ul>
+                    <p class="small text-muted mt-3">Plus all senators from states with APC governors and recent defectors. Full 59-member caucus list available on request. [citation:3][citation:4]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOUSE OF REPS SPEAKER -->
+        <h2 class="section-title"><i class="fas fa-building me-2"></i>HOUSE OF REPRESENTATIVES</h2>
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <div class="leader-card">
+                    <div class="leader-role">Speaker</div>
+                    <div class="leader-name">Tajudeen Abbas</div>
+                    <div class="leader-state">Zaria Federal Constituency [citation:4][citation:5]</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="leader-card">
+                    <div class="leader-role">Deputy Speaker</div>
+                    <div class="leader-name">Benjamin Kalu</div>
+                    <div class="leader-state">Bende Federal Constituency [citation:4]</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STATE CHAIRMEN (MARCH 2026 CONGRESS UPDATES) -->
+        <h2 class="section-title"><i class="fas fa-users me-2" style="color: var(--gov-green);"></i>APC STATE CHAIRMEN (36 STATES)</h2>
+        <div class="state-grid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="state-item">
+                        <div class="state-name">Abia</div>
+                        <div class="chairman-name">Hon. Kingsley Ononogbu</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Adamawa</div>
+                        <div class="chairman-name">Barr. Ibrahim Bilal</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Akwa Ibom</div>
+                        <div class="chairman-name">Hon. Stephen Ntukekpo</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Anambra</div>
+                        <div class="chairman-name">Chief Basil Ejidike</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Bauchi</div>
+                        <div class="chairman-name">Hon. Babayo Misau</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Bayelsa</div>
+                        <div class="chairman-name">Hon. Dennis Otiotio</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Benue</div>
+                        <div class="chairman-name">Barr. Austin Agada</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Borno</div>
+                        <div class="chairman-name">Hon. Bello Ayuba</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Cross River</div>
+                        <div class="chairman-name">Hon. Chris Etta <span class="badge bg-warning text-dark ms-2">NEW [citation:1]</span></div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Delta</div>
+                        <div class="chairman-name">Chief Tony Okocha</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Ebonyi</div>
+                        <div class="chairman-name">Chief Stanley Okoro Emegha</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Edo</div>
+                        <div class="chairman-name">Barr. Jarret Tenebe</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="state-item">
+                        <div class="state-name">Ekiti</div>
+                        <div class="chairman-name">Chief Paul Ayodele Omotoso</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Enugu</div>
+                        <div class="chairman-name">Chief Harold Ngang</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Gombe</div>
+                        <div class="chairman-name">Hon. Nitte Amangal</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Imo</div>
+                        <div class="chairman-name">Chief MacDonald Ebere</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Jigawa</div>
+                        <div class="chairman-name">Aminu Sani Gumel</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Kaduna</div>
+                        <div class="chairman-name">Atiku Isaac Sankey <span class="badge bg-warning text-dark ms-2">NEW [citation:5]</span></div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Kano</div>
+                        <div class="chairman-name">Prince Abdullahi Abbas</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Katsina</div>
+                        <div class="chairman-name">Hon. Sani Lawal Daura</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Kebbi</div>
+                        <div class="chairman-name">Alhaji Abubakar Kana Zuru</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Kogi</div>
+                        <div class="chairman-name">Hon. Abdullahi Bello</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Kwara</div>
+                        <div class="chairman-name">Prince Sunday Fagbemi</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Lagos</div>
+                        <div class="chairman-name">Pastor Cornelius Ojelabi</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="state-item">
+                        <div class="state-name">Nasarawa</div>
+                        <div class="chairman-name">Alhaji Aliyu Bello</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Niger</div>
+                        <div class="chairman-name">Hon. Salihu Garba Kodo</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Ogun</div>
+                        <div class="chairman-name">Chief Yemi Sanusi <span class="badge bg-warning text-dark ms-2">RE-ELECTED [citation:9]</span></div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Ondo</div>
+                        <div class="chairman-name">Engr. Ade Adetimehin</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Osun</div>
+                        <div class="chairman-name">Barr. Tajudeen Lawal</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Oyo</div>
+                        <div class="chairman-name">Alhaji Teslim Folarin</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Plateau</div>
+                        <div class="chairman-name">Hon. Rufus Bature</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Rivers</div>
+                        <div class="chairman-name">Chief Tony Okocha</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Sokoto</div>
+                        <div class="chairman-name">Alhaji Sadiq Isah</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Taraba</div>
+                        <div class="chairman-name">Barr. Ibrahim Tukur El-Sudi</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Yobe</div>
+                        <div class="chairman-name">Alhaji Mohammed Gadaka</div>
+                    </div>
+                    <div class="state-item">
+                        <div class="state-name">Zamfara</div>
+                        <div class="chairman-name">Alhaji Tukur Umar Danfulani</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEDERAL MINISTERS & OTHER KEY HOLDERS (selected) -->
+        <h2 class="section-title"><i class="fas fa-briefcase me-2"></i>KEY FEDERAL APPOINTEES (APC)</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="leader-card">
+                    <div class="leader-role">Vice President</div>
+                    <div class="leader-name">Kashim Shettima</div>
+                    <div class="leader-state">Former Borno Governor [citation:4]</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="leader-card">
+                    <div class="leader-role">Secretary to the Government of the Federation</div>
+                    <div class="leader-name">Sen. George Akume</div>
+                    <div class="leader-state">Former Benue Governor</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="leader-card">
+                    <div class="leader-role">Chief of Staff</div>
+                    <div class="leader-name">Hon. Femi Gbajabiamila</div>
+                    <div class="leader-state">Former Speaker [citation:4]</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="leader-card">
+                    <div class="leader-role">Minister of Finance</div>
+                    <div class="leader-name">Wale Edun</div>
+                    <div class="leader-state"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="leader-card">
+                    <div class="leader-role">Minister of Information</div>
+                    <div class="leader-name">Mohammed Idris Malagi</div>
+                    <div class="leader-state">[citation:4]</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="leader-card">
+                    <div class="leader-role">Minister of Defence</div>
+                    <div class="leader-name">Maj. Gen. Bashir Salihi Magashi (retd.)</div>
+                    <div class="leader-state"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info bg-light border-0 rounded-4 p-4">
+            <i class="fas fa-info-circle me-2"></i> <strong>Note:</strong> This directory is compiled from official APC congress results (March 2026), convention committee lists, and National Assembly records. State chairmen for Cross River, Kaduna, and Ogun updated following March 3-4, 2026 congresses. Senate count reflects post-defection numbers. [citation:1][citation:3][citation:5]
+        </div>
+    </main>
+
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo text-white text-decoration-none fs-3 fw-bold" href="index.html">SWEEP<span class="text-danger">TV</span></a>
+                    <p style="color: #cbcbcc;">Nigeria's premier digital media platform dedicated to comprehensive, unbiased coverage of the All Progressives Congress and national development.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">CATEGORIES</h6>
+                    <a href="Politics.html" class="footer-link">APC News</a>
+                    <a href="roadmap.html" class="footer-link">2027 Tracker</a>
+                    <a href="Politics.html" class="footer-link">Governance</a>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">RESOURCES</h6>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="Team.html" class="footer-link">Team</a>
+                    <a href="Privacy.html" class="footer-link">Privacy</a>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-4">NEWSLETTER</h6>
+                    <div class="input-group">
+                        <input type="text" class="form-control newsletter-input" placeholder="Your email">
+                        <button class="btn btn-danger rounded-pill ms-2 px-4">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 text-center border-top border-secondary">
+                <p style="color: #aaa;">&copy; 2026 Sweep TV Nigeria. Truth. Progress. Democracy.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateTime() {
+            const options = { 
+                timeZone: 'Africa/Lagos', weekday: 'long', year: 'numeric', 
+                month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
+            };
+            const clock = document.getElementById('nigerian-clock');
+            if(clock) clock.innerText = new Intl.DateTimeFormat('en-NG', options).format(new Date()) + " WAT";
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>

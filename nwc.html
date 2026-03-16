@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWC Updates | Sweep TV Nigeria - APC National Working Committee</title>
+    <link rel="icon" type="image/png" href="LOGO.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-red: #E53935;
+            --soft-bg: #f4f7f6;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --dark-blue: #1A237E;
+            --footer-dark: #111111;
+            --nwc-gold: #c49b1f;  /* accent for NWC */
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--soft-bg);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+        .animate-pulse { animation: pulse 2s infinite; }
+
+        /* Layout Elements */
+        .top-bar { background: #fff; border-bottom: 1px solid #eee; padding: 8px 0; font-size: 0.85rem; }
+        
+        .navbar { 
+            background: rgba(255, 255, 255, 0.95) !important; 
+            backdrop-filter: blur(10px); 
+            padding: 12px 0; 
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
+        }
+
+        .navbar-brand { font-weight: 800; letter-spacing: -1px; font-size: 1.8rem; color: var(--primary-red) !important; }
+        .nav-link { font-weight: 600; color: #444 !important; transition: 0.3s; font-size: 0.95rem; }
+        .nav-link:hover { color: var(--primary-red) !important; }
+
+        .ticker-wrap { 
+            background: #fff; 
+            padding: 12px; 
+            border-radius: 50px; 
+            box-shadow: var(--card-shadow); 
+            margin-bottom: 30px; 
+            display: flex; 
+            align-items: center; 
+        }
+        .ticker-label { 
+            background: var(--primary-red); 
+            color: white; 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            font-weight: bold; 
+            font-size: 0.75rem; 
+            margin-right: 15px; 
+            white-space: nowrap;
+        }
+
+        /* Page Header */
+        .nwc-header {
+            background: linear-gradient(145deg, #0a2a44 0%, #1a2e4f 100%);
+            color: white;
+            padding: 40px 0;
+            border-radius: 30px;
+            margin-bottom: 40px;
+        }
+
+        /* News Cards */
+        .news-card {
+            background: white;
+            border-radius: 20px;
+            border: none;
+            transition: 0.3s;
+            margin-bottom: 25px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        .news-card:hover { transform: translateY(-5px); }
+        .tag-nwc { color: var(--nwc-gold); font-weight: 800; font-size: 0.7rem; text-transform: uppercase; }
+
+        /* Trending Sidebar */
+        .trending-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .trending-num { font-size: 1.5rem; font-weight: 800; color: #ddd; margin-right: 15px; }
+
+        /* Footer */
+        .footer-modern { 
+            background: var(--footer-dark); color: #fff; padding: 80px 0 30px; 
+            border-radius: 40px 40px 0 0; margin-top: 80px; 
+        }
+        .footer-link { color: #aaa; text-decoration: none; transition: 0.3s; display: block; margin-bottom: 10px; font-size: 0.9rem; }
+        .footer-link:hover { color: var(--primary-red); padding-left: 5px; }
+        
+        .newsletter-input { 
+            background: #222; border: 1px solid #333; color: #fff; 
+            border-radius: 30px; padding: 12px 20px; 
+        }
+
+        .official-doc {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 16px;
+            border-left: 4px solid var(--nwc-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div id="nigerian-clock" class="text-muted fw-bold"></div>
+            <div class="social-icons">
+                <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-muted me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-muted"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <a class="navbar-brand mb-0 pb-0" href="index.html">
+                    SWEEP<span style="color:#222">TV</span>
+                    <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
+                </a>
+                <small class="text-muted d-none d-lg-block" style="font-size: 0.7rem; font-weight: 600;">
+                    Your No.1 Hub for APC News & Top Analysis
+                </small>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-danger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold text-danger" href="#" id="apcDrop" data-bs-toggle="dropdown">APC Central</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="nwc.html">NWC Updates</a></li>
+                            <li><a class="dropdown-item" href="roadmap.html">2027 Roadmap</a></li>
+                            <li><a class="dropdown-item" href="statechapters.html">State Chapters</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Gassroots.html">Grassroots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Business.html">Business </a></li>
+                    
+                    <li class="nav-item ms-lg-3"><a class="nav-link small text-muted border-start ps-lg-3" href="about.html">About Us</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <div class="ticker-wrap">
+            <span class="ticker-label">NWC BULLETIN</span>
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="font-weight: 600; font-size: 0.9rem;">
+                • NEC meeting scheduled for April 12 • NWC approves Adamawa caretaker committee • National secretary summons state chairmen • Fresh zoning formula being debated
+            </marquee>
+        </div>
+
+        <!-- NWC Header -->
+        <div class="nwc-header d-flex align-items-center justify-content-between p-4">
+            <div>
+                <h1 class="display-6 fw-bold mb-2">🔴 National Working Committee</h1>
+                <p class="lead opacity-75 mb-0">Real-time updates from the APC NWC — communiqués, appointments, and decisions.</p>
+            </div>
+            <span class="badge bg-warning text-dark px-4 py-3 rounded-pill d-none d-md-block" style="font-size: 1rem;">20+ OFFICIAL UPDATES</span>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- News card 1: Yilwatda's first memo -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.Cl-Y96lIcheeD4fUf7JOqQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3 " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="APC National Secretariat">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-nwc">EXCLUSIVE: NWC CIRCULAR</span>
+                                <h4 class="fw-bold mt-2">Nentawe Yilwatda Signs First Directive: State Chairmen Must Revalidate Loyalty by March 31</h4>
+                                <p class="text-muted small">In a memo ref: APC/NWC/2026/014, the new chairman orders all state executives to submit signed affidavits of loyalty to President Tinubu and the NWC. Defaulting states face caretaker committees.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 2 hours ago</small>
+                                    <a href="#" class="ms-auto text-warning fw-bold text-decoration-none small">Read full circular <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News card 2: NWC meeting with Govs -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.63OZIZGnPIvpDaqso-s90gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3 " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="APC Governors meeting">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-nwc">NWC-GOVERNORS PARLEY</span>
+                                <h4 class="fw-bold mt-2">North-Central Governors Demand Automatic Ticket for Yilwatda in 2027</h4>
+                                <p class="text-muted small">At the NWC expanded meeting in Aso Rock, six APC governors from the north-central zone presented a solidarity memo, urging the NWC to zone the chairmanship to the region for continuity.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 5 hours ago</small>
+                                    <a href="#" class="ms-auto text-warning fw-bold text-decoration-none small">Read communiqué <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News card 3: Zoning committee -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.myGcKyWa40ntlcYCjaYc1gHaEd?rs=1&pid=ImgDetMain&o=7&rm=3 " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Zoning meeting">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-nwc">NWC ZONING COMMITTEE</span>
+                                <h4 class="fw-bold mt-2">NWC Constitutes 7-Member Zoning Panel for 2027: Akume, Ganduje in Lead</h4>
+                                <p class="text-muted small">The committee will propose allocation of presidential, gubernatorial, and legislative tickets. Sources say the "Renewed Hope" template favours retaining the presidency in the South-West, but North-Central is pushing.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 1 day ago</small>
+                                    <a href="#" class="ms-auto text-warning fw-bold text-decoration-none small">See full list <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News card 4: Disciplinary action -->
+                <div class="news-card card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.4p0zoTPiuc6AwwrekJv5_gHaFj?rs=1&pid=ImgDetMain&o=7&rm=3 " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="APC NWC sitting">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <span class="tag-nwc">DISCIPLINE & ETHICS</span>
+                                <h4 class="fw-bold mt-2">NWC Suspends Ogun State Chairman Over Anti-Party Activities</h4>
+                                <p class="text-muted small">Chief Derin Adebiye is accused of sponsoring parallel ward congresses. NWC cites Article 21 of the party constitution; deputy chairman takes over in acting capacity.</p>
+                                <div class="d-flex align-items-center">
+                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 2 days ago</small>
+                                    <a href="#" class="ms-auto text-warning fw-bold text-decoration-none small">Read suspension order <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Official document sample -->
+                <div class="official-doc my-4">
+                    <div class="d-flex">
+                        <i class="fas fa-file-pdf text-danger fs-1 me-3"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">📄 COMMUNIQUÉ: 147th NWC MEETING (MARCH 15, 2026)</h6>
+                            <p class="small text-muted mb-1">Resolutions on congresses, discipline, and 2027 strategy. 8-page document signed by National Secretary.</p>
+                            <a href="#" class="small fw-bold text-decoration-none"><i class="fas fa-download me-1"></i> Download PDF (2.4 MB)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDEBAR (right column) for NWC -->
+            <div class="col-lg-4">
+                <div class="sidebar-widget bg-white p-4 rounded-4 shadow-sm mb-4">
+                    <h5 class="fw-bold mb-4">NWC MEMBERS <i class="fas fa-users text-warning ms-2"></i></h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-user-tie text-warning me-3 fs-5"></i>
+                            <div><strong>Nentawe Yilwatda</strong> <small class="text-muted d-block">National Chairman</small></div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-user-tie text-warning me-3 fs-5"></i>
+                            <div><strong>Sen. Basheer Lado</strong> <small class="text-muted d-block">Deputy Chairman (North)</small></div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-user-tie text-warning me-3 fs-5"></i>
+                            <div><strong>Hon. Nkechi Mba</strong> <small class="text-muted d-block">National Secretary</small></div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-user-tie text-warning me-3 fs-5"></i>
+                            <div><strong>Dr. Igo Aguma</strong> <small class="text-muted d-block">Legal Adviser</small></div>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-warning btn-sm w-100 mt-2">Full directory</button>
+                </div>
+
+                <div class="sidebar-widget bg-white p-4 rounded-4 shadow-sm mb-4">
+                    <h5 class="fw-bold mb-4">Upcoming NWC Events</h5>
+                    <div class="d-flex mb-3">
+                        <i class="far fa-calendar-check text-warning me-3 fs-4"></i>
+                        <div><span class="fw-bold">March 25, 2026</span><br><small class="text-muted">NWC meeting with BOT</small></div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="far fa-calendar-check text-warning me-3 fs-4"></i>
+                        <div><span class="fw-bold">April 2, 2026</span><br><small class="text-muted">Zoning committee report</small></div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="far fa-calendar-check text-warning me-3 fs-4"></i>
+                        <div><span class="fw-bold">April 12, 2026</span><br><small class="text-muted">NEC (National Executive)</small></div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget bg-dark text-white p-4 rounded-4 shadow-sm" style="background: #1a2639 !important;">
+                    <h5 class="fw-bold">NWC PRESS OFFICE</h5>
+                    <p class="small opacity-75">Accredited journalists can access embargoed releases and briefing schedules.</p>
+                    <button class="btn btn-warning btn-sm w-100 fw-bold py-2">Apply for accreditation</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="footer-logo text-white text-decoration-none" href="index.html">SWEEP<span class="text-danger">TV</span></a>
+                    <p style="color: #cbcbcb;">Nigeria's premier digital media platform dedicated to comprehensive, unbiased coverage of the All Progressives Congress and national development.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">CATEGORIES</h6>
+                    <a href="Politics.html" class="footer-link">APC News</a>
+                    <a href="roadmap.html" class="footer-link">2027 Tracker</a>
+                    <a href="Politics.html" class="footer-link">Governance</a>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-4">RESOURCES</h6>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="Team.html" class="footer-link">Team</a>
+                    <a href="Privacy.html" class="footer-link">Privacy</a>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-4">NEWSLETTER</h6>
+                    <div class="input-group">
+                        <input type="text" class="form-control newsletter-input" placeholder="Your email">
+                        <button class="btn btn-danger rounded-pill ms-2 px-4">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 text-center border-top border-secondary">
+                <p style="color: #aaa;">&copy; 2026 Sweep TV Nigeria. Truth. Progress. Democracy.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateTime() {
+            const options = { 
+                timeZone: 'Africa/Lagos', weekday: 'long', year: 'numeric', 
+                month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
+            };
+            const clock = document.getElementById('nigerian-clock');
+            if(clock) clock.innerText = new Intl.DateTimeFormat('en-NG', options).format(new Date()) + " WAT";
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
