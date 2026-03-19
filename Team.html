@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Sweep TV Nigeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-red: #D32F2F;
+            --pure-white: #FFFFFF;
+            --dark-gray: #212121;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
+
+        .top-bar { background-color: var(--primary-red); color: white; font-size: 0.9rem; padding: 8px 0; }
+        .navbar-brand { font-weight: 800; color: var(--primary-red) !important; font-size: 1.8rem; }
+        .nav-link { font-weight: 600; text-transform: uppercase; color: var(--dark-gray); }
+        
+        /* Team page header */
+        .team-header {
+            background: linear-gradient(rgba(211, 47, 47, 0.85), rgba(33, 33, 33, 0.9)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070');
+            background-size: cover;
+            background-position: center 30%;
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 50px;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+            transition: all 0.2s ease;
+            border: 1px solid #f0f0f0;
+            height: 100%;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(211,47,47,0.1);
+            border-color: var(--primary-red);
+        }
+        .team-avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-red);
+            margin-bottom: 18px;
+            background: #eee;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .avatar-placeholder {
+            background: #D32F2F;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .team-card h5 {
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--dark-gray);
+        }
+        .team-card .role {
+            color: var(--primary-red);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .team-card .bio-placeholder {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        .publisher-note {
+            background-color: #f0f0f0;
+            border-left: 5px solid var(--primary-red);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        footer { background: var(--dark-gray); color: white; padding: 40px 0; margin-top: 50px; }
+        footer a { color: #bbb; text-decoration: none; }
+        footer a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- top bar with clock -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div id="nigerian-clock"><i class="far fa-clock me-2"></i>Loading Time...</div>
+            <div class="social-links">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- navigation (consistent with about page) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <a class="navbar-brand mb-0 pb-0" href="#">
+                    SWEEP<span style="color:#222">TV</span>
+                    <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
+                </a>
+                <small class="text-muted d-none d-lg-block" style="font-size: 0.7rem; font-weight: 600;">
+                    Your No.1 Hub for APC News & Top Analysis
+                </small>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-danger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold text-danger" href="#" id="apcDrop" data-bs-toggle="dropdown">APC Central</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="nwc.html">NWC Updates</a></li>
+                            <li><a class="dropdown-item" href="roadmap.html">2027 Roadmap</a></li>
+                            <li><a class="dropdown-item" href="statechapters.html">State Chapters</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li class="nav-item"><a class="nav-link" href="Politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Business.html">Business </a></li>
+                    
+                    <li class="nav-item ms-lg-3"><a class="nav-link small text-muted border-start ps-lg-3" href="about.html">About Us</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- team header -->
+    <header class="team-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Meet The Team</h1>
+            <p class="lead">The dedicated people behind Sweep TV Nigeria</p>
+        </div>
+    </header>
+
+    <!-- main team section -->
+    <main class="container">
+        <!-- introductory line / publisher credit (Orovie Media Ltd) -->
+        <div class="text-center mb-4">
+            <span class="badge bg-danger px-4 py-2 rounded-pill fs-6">Published by OROVIE MEDIA LTD</span>
+        </div>
+        <p class="text-center text-muted mb-5">A powerhouse of journalists, creatives, and tech experts bringing you the pulse of the nation.</p>
+
+        <!-- TEAM GRID -->
+        <div class="row g-4">
+            <!-- Helen Jude: Editor-in-Chief -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">HJ</div>
+                    <h5>Helen Jude</h5>
+                    <div class="role">Editor-in-Chief</div>
+                    <p class="bio-placeholder">Guiding the editorial vision and daily news operations.</p>
+                </div>
+            </div>
+
+            <!-- Jimmy Osaro: Publishing Consultant -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">JO</div>
+                    <h5>Jimmy Osaro</h5>
+                    <div class="role">Publishing Consultant</div>
+                    <p class="bio-placeholder">Strategic advisor for publishing and media growth.</p>
+                </div>
+            </div>
+
+            <!-- Annabel E Ordu: Editorial Managing Consultant -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">AO</div>
+                    <h5>Annabel E. Ordu</h5>
+                    <div class="role">Editorial Managing Consultant</div>
+                    <p class="bio-placeholder">Oversees editorial standards and content strategy.</p>
+                </div>
+            </div>
+
+            <!-- Helen Jude (second listing? appears again, but we keep unique. we list once; if duplicate we merge, but spec says Helen Jude appears twice. we include once as EIC, skip second) -->
+            <!-- Hassie Oyama: Contributing Editor -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">HO</div>
+                    <h5>Hassie Oyama</h5>
+                    <div class="role">Contributing Editor</div>
+                    <p class="bio-placeholder">In-depth features and political analysis.</p>
+                </div>
+            </div>
+
+            <!-- Godwin Ojoma: Creative Director -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">GO</div>
+                    <h5>Godwin Ojoma</h5>
+                    <div class="role">Creative Director</div>
+                    <p class="bio-placeholder">Visual identity and brand creativity.</p>
+                </div>
+            </div>
+
+            <!-- Kelechi Nwachukwu: Web Developer & Head of Technology -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">KN</div>
+                    <h5>Kelechi Nwachukwu</h5>
+                    <div class="role">Web Developer & Head of Technology</div>
+                    <p class="bio-placeholder">Digital infrastructure and innovation.</p>
+                </div>
+            </div>
+
+            <!-- Samuel Victor: Photo-Journalist -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">SV</div>
+                    <h5>Samuel Victor</h5>
+                    <div class="role">Photo-Journalist</div>
+                    <p class="bio-placeholder">Visual storytelling from the field.</p>
+                </div>
+            </div>
+
+            <!-- Aaron C. Auta: Logistics -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">AA</div>
+                    <h5>Aaron C. Auta</h5>
+                    <div class="role">Logistics</div>
+                    <p class="bio-placeholder">Ensuring smooth operations and coordination.</p>
+                </div>
+            </div>
+
+            <!-- Ivie Jacklyn: Social Media & Lifestyle -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">IJ</div>
+                    <h5>Ivie Jacklyn</h5>
+                    <div class="role">Social Media & Lifestyle</div>
+                    <p class="bio-placeholder">Engaging content and lifestyle coverage.</p>
+                </div>
+            </div>
+
+            <!-- Helen Samuel: Head, Lagos Liaison -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">HS</div>
+                    <h5>Helen Samuel</h5>
+                    <div class="role">Head, Lagos Liaison</div>
+                    <p class="bio-placeholder">Connecting Lagos bureau with HQ.</p>
+                </div>
+            </div>
+
+            <!-- Happiness Elele: Social Media Manager -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-card">
+                    <div class="team-avatar avatar-placeholder mx-auto">HE</div>
+                    <h5>Happiness Elele</h5>
+                    <div class="role">Social Media Manager</div>
+                    <p class="bio-placeholder">Digital engagement and audience growth.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- note about Orovie Media / advert contact (consistent with about page) -->
+        <div class="publisher-note mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h5><i class="fas fa-building text-danger me-2"></i> Published by Orovie Media Ltd</h5>
+                    <p class="mb-2"><strong>For Advert Placement & inquiries:</strong> Call <span class="fw-bold text-danger">0704 533 3306</span></p>
+                    <p class="mb-0 small">WHITE HOUSE, OAU QUARTERS, MAITAMA – ABUJA</p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <i class="fas fa-phone-alt fa-2x text-danger me-2"></i>
+                    <span class="fw-bold">0704 533 3306</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- short join us message -->
+        <div class="text-center my-4">
+            <p class="text-muted">Passionate about Nigerian politics and media? <a href="#" class="text-danger fw-bold">Join our team</a></p>
+        </div>
+    </main>
+
+    <!-- footer (updated with contact) -->
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white">Sweep TV Nigeria</h5>
+                    <p class="small">Published by <strong>Orovie Media Ltd</strong>. Leading APC news and political analysis.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white">Quick Links</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="advert.html">Advertise</a></li>
+                        <li><a href="Privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white">Contact</h5>
+                    <p class="small">
+                        <i class="fas fa-map-marker-alt me-1"></i>WHITE HOUSE, OAU QUARTERS MAITAMA<br>
+                        <i class="fas fa-envelope me-1"></i>info@sweeptvnigeria.com<br>
+                        <i class="fas fa-phone me-1"></i>Advert: 0704 533 3306
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center small mb-0">&copy; 2026 Sweep TV Nigeria (Orovie Media Ltd). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- clock script -->
+    <script>
+        function updateTime() {
+            const options = { 
+                timeZone: 'Africa/Lagos', 
+                weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', 
+                hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true 
+            };
+            const formatter = new Intl.DateTimeFormat('en-GB', options);
+            document.getElementById('nigerian-clock').innerHTML = '<i class="far fa-clock me-2"></i>' + formatter.format(new Date()) + " (WAT)";
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
