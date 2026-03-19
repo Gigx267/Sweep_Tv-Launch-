@@ -72,6 +72,14 @@
             background: #222; border: 1px solid #333; color: #fff; 
             border-radius: 30px; padding: 12px 20px; 
         }
+        .article-link { text-decoration: none; color: inherit; }
+        .article-link:hover .news-card { box-shadow: 0 15px 35px rgba(229, 57, 53, 0.15); transition: 0.2s; }
+        .ticker-wrap { 
+            background: #fff; padding: 10px 15px; border-radius: 50px; box-shadow: var(--card-shadow); 
+            margin-bottom: 25px; display: flex; align-items: center; 
+        }
+        .ticker-label { background: var(--primary-red); color: white; padding: 3px 10px; border-radius: 6px; font-weight: 800; font-size: 0.65rem; margin-right: 12px; white-space: nowrap; }
+        .press-release-bg { background-color: #f2f2f2; border-left: 4px solid var(--primary-red); }
     </style>
 </head>
 <body>
@@ -79,7 +87,7 @@
    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <div class="d-flex flex-column">
-                <a class="navbar-brand mb-0 pb-0" href="#">
+                <a class="navbar-brand mb-0 pb-0" href="index.html">
                     SWEEP<span style="color:#222">TV</span>
                     <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
                 </a>
@@ -103,14 +111,14 @@
                             <li><a class="dropdown-item" href="statechapters.html">State Chapters</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="Gassroots.html">Grassroots</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Politics.html">Politics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Economy.html">Economy</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Business.html">Business </a></li>
+                    <li class="nav-item"><a class="nav-link" href="grassroots.html">Grassroots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="business.html">Business </a></li>
                     
                     <li class="nav-item ms-lg-3"><a class="nav-link small text-muted border-start ps-lg-3" href="about.html">About Us</a></li>
                     <li class="nav-item ms-lg-2">
-                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
+                        <a href="subscribe.html" class="btn btn-sm btn-danger rounded-pill px-3">Subscribe</a>
                     </li>
                 </ul>
             </div>
@@ -140,98 +148,164 @@
     </header>
 
     <main class="container">
+        <!-- Ticker with latest -->
+        <div class="ticker-wrap">
+            <span class="ticker-label">🚨 POLITICS</span>
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="font-weight: 600; font-size: 0.85rem;">
+⚡ Tinubu orders appointees to resign by March 31 | UK visit: high-level delegation meets King Charles | Ohiri vs Umahi: property scrutiny | Nentawe consolidates APC grip ahead of convention.
+            </marquee>
+        </div>
+
         <div class="row">
             <div class="col-lg-8">
                 <h4 class="fw-bold mb-4 border-start border-danger border-4 ps-3">Latest Political Intel</h4>
 
-                <div class="news-card card">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://tse4.mm.bing.net/th/id/OIP.4ISTweifG38nnhNaC41zUAHaGm?rs=1&pid=ImgDetMain&o=7&rm=3 " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Gavel">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body p-4">
-                                <span class="tag-politics">Party Supremacy</span>
-                                <h4 class="fw-bold mt-2">Nentawe Yilwatda Issues 48-Hour Ultimatum to Disloyal State Chairmen</h4>
-                                <p class="text-muted small">In his first major move as National Chairman, Yilwatda demands total alignment with the 'Renewed Hope' project or face immediate dissolution of state executives.</p>
-                                <div class="d-flex align-items-center">
-                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 45 mins ago</small>
-                                    <a href="#" class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></a>
+                <!-- Article 1: Tinubu directive (report1) -->
+                <a href="report1.html" class="article-link" target="_blank">
+                    <div class="news-card card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://gazettengr.com/wp-content/uploads/President-Bola-Ahmed-Tinubu.png" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Tinubu">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <span class="tag-politics">⚡ BREAKING: DIRECTIVE</span>
+                                    <h4 class="fw-bold mt-2">Tinubu orders political appointees seeking 2027 offices to resign by March 31</h4>
+                                    <p class="text-muted small">SGF circular cites Electoral Act 2026; ministers, aides, DG's affected. Full list of four ministers directed for guber races inside.</p>
+                                    <div class="d-flex align-items-center">
+                                        <small class="text-muted"><i class="far fa-clock me-1"></i> 17 March 2026</small>
+                                        <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="news-card card">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://newtelegraphng.com/wp-content/uploads/2026/02/Bola-Tinubu-768x576.jpg " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Nigeria Map">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body p-4">
-                                <span class="tag-politics">Defection Watch</span>
-                                <h4 class="fw-bold mt-2">Rumors Swirl as Five PDP Senators Meet with Tinubu Behind Closed Doors</h4>
-                                <p class="text-muted small">Sources suggest a massive "Southeastern Sweep" is in the works, potentially giving APC a two-thirds majority in the Red Chamber by Q3 2026.</p>
-                                <div class="d-flex align-items-center">
-                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 3 hours ago</small>
-                                    <a href="#" class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></a>
+                <!-- Article 2: UK State Visit (report2) -->
+                <a href="report2.html" class="article-link" target="_blank">
+                    <div class="news-card card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src=" https://www.naijanews.com/wp-content/uploads/2023/07/IMG_7721.jpeg" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="UK Visit">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <span class="tag-politics">🇬🇧 DIPLOMACY</span>
+                                    <h4 class="fw-bold mt-2">President Tinubu departs for UK state visit with high-level delegation</h4>
+                                    <p class="text-muted small">First Lady, Senate President, ministers, NSA Ribadu — 14 officials in London to strengthen trade, security, investment.</p>
+                                    <div class="d-flex align-items-center">
+                                        <small class="text-muted"><i class="far fa-clock me-1"></i> 18 March 2026</small>
+                                        <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="news-card card">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://i.pinimg.com/1200x/5f/15/7e/5f157e082e5c719e5a3ad9a69381b133.jpg " class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Document">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body p-4">
-                                <span class="tag-politics">Legislative Focus</span>
-                                <h4 class="fw-bold mt-2">State Police: APC Governors Forum Submits Harmonized Report to National Assembly</h4>
-                                <p class="text-muted small">The proposed 2026 Constitutional Amendment looks to decentralize security, a move the APC says will end the "banditry era" once and for all.</p>
-                                <div class="d-flex align-items-center">
-                                    <small class="text-muted"><i class="far fa-clock me-1"></i> 6 hours ago</small>
-                                    <a href="#" class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></a>
+                <!-- Article 3: Umahi allegations (report3) -->
+                <a href="report3.html" class="article-link" target="_blank">
+                    <div class="news-card card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://media.kanyidaily.com/2022/03/08175315/David-Umahi.jpg" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Umahi">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <span class="tag-politics">🔥 ALLEGATIONS</span>
+                                    <h4 class="fw-bold mt-2">Ohiri challenges Umahi: "public must know source of Lekki, Enugu properties"</h4>
+                                    <p class="text-muted small">Businesswoman accuses minister of sexual harassment, fraud, demands transparency over assets. Umahi dismisses claims as political.</p>
+                                    <div class="d-flex align-items-center">
+                                        <small class="text-muted"><i class="far fa-clock me-1"></i> 19 March 2026</small>
+                                        <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
+
+                <!-- Article 4: Nentawe Yilwatda (report4) -->
+                <a href="report4.html" class="article-link" target="_blank">
+                    <div class="news-card card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.4ISTweifG38nnhNaC41zUAHaGm?rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid h-100 rounded-start" style="object-fit: cover;" alt="Nentawe">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <span class="tag-politics">🏛️ APC INTERNAL</span>
+                                    <h4 class="fw-bold mt-2">Nentawe Yilwatda consolidates grip: 48-hour ultimatum to state chairmen?</h4>
+                                    <p class="text-muted small">After surviving 2025 ultimatum, chairman gains endorsements, defections, and zoning boost ahead of March 27 convention.</p>
+                                    <div class="d-flex align-items-center">
+                                        <small class="text-muted"><i class="far fa-clock me-1"></i> 20 March 2026</small>
+                                        <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Intel <i class="fas fa-arrow-right"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
             <div class="col-lg-4">
+                <!-- Power Rankings -->
                 <div class="sidebar-widget bg-white p-4 rounded-4 shadow-sm mb-4">
                     <h5 class="fw-bold mb-4">Power Rankings <i class="fas fa-chart-line text-danger ms-2"></i></h5>
                     <div class="trending-item d-flex align-items-center">
                         <span class="trending-num">01</span>
                         <div>
                             <h6 class="fw-bold mb-0">Nentawe Yilwatda</h6>
-                            <small class="text-muted">National Chairman (Rising)</small>
+                            <small class="text-muted">National Chairman (consolidating)</small>
                         </div>
                     </div>
                     <div class="trending-item d-flex align-items-center">
                         <span class="trending-num">02</span>
                         <div>
-                            <h6 class="fw-bold mb-0">Gov. Peter Mbah</h6>
-                            <small class="text-muted">Enugu APC Liaison (New Entry)</small>
+                            <h6 class="fw-bold mb-0">President Tinubu</h6>
+                            <small class="text-muted">UK visit, 2027 focus</small>
                         </div>
                     </div>
                     <div class="trending-item d-flex align-items-center">
                         <span class="trending-num">03</span>
                         <div>
-                            <h6 class="fw-bold mb-0">Tunji Disu</h6>
-                            <small class="text-muted">IGP - Security Reformist</small>
+                            <h6 class="fw-bold mb-0">David Umahi</h6>
+                            <small class="text-muted">Minister (under scrutiny)</small>
                         </div>
                     </div>
                 </div>
 
-                <div class="sidebar-widget bg-danger text-white p-4 rounded-4 shadow-sm">
-                    <h5 class="fw-bold">2027 Voter Census</h5>
-                    <p class="small opacity-75">APC Youth Wing begins nationwide digital registration of first-time voters.</p>
-                    <button class="btn btn-light btn-sm w-100 fw-bold py-2">View Data Portal</button>
+                <!-- 2027 Watch -->
+                <div class="sidebar-widget bg-danger text-white p-4 rounded-4 shadow-sm mb-4">
+                    <h5 class="fw-bold">🏛️ 2027 WATCH</h5>
+                    <p class="small opacity-75">Four ministers directed to resign for guber races: Alausa (Lagos), Adelabu (Oyo), Tuggar, Pate (Bauchi).</p>
+                    <a href="report1.html" class="btn btn-light btn-sm w-100 fw-bold py-2" target="_blank">See full list</a>
+                </div>
+
+                <!-- In the news (quick links) -->
+                <div class="sidebar-widget bg-white p-4 rounded-4 shadow-sm">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-newspaper text-danger me-2"></i>In the news</h5>
+                    <div class="mb-3 pb-2 border-bottom">
+                        <span class="badge bg-light text-dark mb-1">DIRECTIVE</span>
+                        <p class="fw-bold small mb-1">SGF circular: all political appointees for 2027 must resign by March 31</p>
+                        <a href="report1.html" class="small text-danger">Read circular →</a>
+                    </div>
+                    <div class="mb-3 pb-2 border-bottom">
+                        <span class="badge bg-light text-dark mb-1">DIPLOMACY</span>
+                        <p class="fw-bold small mb-1">Tinubu in UK: delegation meets King Charles, business leaders</p>
+                        <a href="report2.html" class="small text-danger">Full list →</a>
+                    </div>
+                    <div class="mb-3 pb-2 border-bottom">
+                        <span class="badge bg-light text-dark mb-1">ALLEGATION</span>
+                        <p class="fw-bold small mb-1">Ohiri vs Umahi: property scrutiny intensifies</p>
+                        <a href="report3.html" class="small text-danger">Full story →</a>
+                    </div>
+                    <div class="mb-3 pb-2">
+                        <span class="badge bg-light text-dark mb-1">APC</span>
+                        <p class="fw-bold small mb-1">Nentawe gets endorsements, defections ahead of convention</p>
+                        <a href="report4.html" class="small text-danger">Read more →</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -241,20 +315,20 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <a class="footer-logo text-white text-decoration-none" href="#">SWEEP<span class="text-danger">TV</span></a>
+                    <a class="footer-logo text-white text-decoration-none fs-3 fw-800" href="#">SWEEP<span class="text-danger">TV</span></a>
                     <p style="color: #cbcbcb;">Nigeria's premier digital media platform dedicated to comprehensive, unbiased coverage of the All Progressives Congress and national development.</p>
                 </div>
                 <div class="col-lg-2">
                     <h6 class="fw-bold mb-4">CATEGORIES</h6>
-                    <a href="#" class="footer-link">APC News</a>
-                    <a href="#" class="footer-link">2027 Tracker</a>
-                    <a href="#" class="footer-link">Governance</a>
+                    <a href="politics.html" class="footer-link">APC News</a>
+                    <a href="2027tracker.html" class="footer-link">2027 Tracker</a>
+                    <a href="governance.html" class="footer-link">Governance</a>
                 </div>
                 <div class="col-lg-2">
                     <h6 class="fw-bold mb-4">RESOURCES</h6>
-                    <a href="#" class="footer-link">About Us</a>
-                    <a href="#" class="footer-link">Team</a>
-                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="team.html" class="footer-link">Team</a>
+                    <a href="privacy.html" class="footer-link">Privacy</a>
                 </div>
                 <div class="col-lg-4">
                     <h6 class="fw-bold mb-4">NEWSLETTER</h6>
@@ -271,5 +345,14 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateTime() {
+            const options = { timeZone: 'Africa/Lagos', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            const clock = document.getElementById('nigerian-clock');
+            if(clock) clock.innerText = new Intl.DateTimeFormat('en-NG', options).format(new Date());
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
 </body>
 </html>
