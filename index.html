@@ -86,9 +86,15 @@
         .post-card, .news-card { 
             background: white; border-radius: 16px; overflow: hidden; border: none; 
             margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
         }
         .category-badge { font-size: 0.65rem; text-transform: uppercase; font-weight: 800; color: var(--primary-red); letter-spacing: 0.5px; }
         .tag-politics { background: #ffebee; color: var(--primary-red); padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
+        .tag-democracy { background: #e8f0fe; color: #0b5e9e; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
 
         .trending-item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
         .trending-num { font-size: 1.5rem; font-weight: 800; color: #eee; margin-right: 15px; min-width: 30px; }
@@ -108,9 +114,14 @@
         }
         .press-release-bg { background-color: #f2f2f2; border-left: 4px solid var(--primary-red); }
         .small-caps { font-variant: small-caps; letter-spacing: 0.5px; }
-        /* article link style */
         .article-link { text-decoration: none; }
-        .article-link:hover .news-card { box-shadow: 0 10px 25px rgba(229, 57, 53, 0.15); transition: 0.2s; }
+        .democracy-quote-badge {
+            background: #e3f2fd;
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin-top: 12px;
+            border-left: 4px solid #0b5e9e;
+        }
     </style>
 </head>
 <body>
@@ -126,9 +137,9 @@
         </div>
     </div>
 
-       <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 SWEEP<span style="color:#222">TV</span>
                 <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
             </a>
@@ -160,11 +171,11 @@
     </nav>
 
     <main class="container mt-3 mt-md-4">
-        <!-- TICKER WITH BREAKING NEWS -->
+        <!-- TICKER WITH BREAKING NEWS (updated with Alia story) -->
         <div class="ticker-wrap">
             <span class="ticker-label">🚨 BREAKING</span>
             <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="font-weight: 600; font-size: 0.85rem;">
-⚡ Federal government directs four ministers — Alausa, Adelabu, Tuggar, Pate — to resign for 2027 governorship races. | President Tinubu departs for UK state visit with high-level delegation.
+⚡ Gov. Alia: "Benue voters, not elites, will decide 2027" — rejects Zam's remark on SGF Akume guiding electorate. | Federal government directs four ministers to resign for 2027 governorship races. | President Tinubu departs for UK state visit with high-level delegation.
             </marquee>
         </div>
 
@@ -195,6 +206,7 @@
                     <a href="report1.html" class="btn btn-sm btn-outline-danger" target="_blank">Read Full</a>
                 </div>
             </div>
+
             <div class="col-lg-5">
                 <!-- UK State Visit card with full article link -->
                 <a href="report2.html" class="article-link" target="_blank">
@@ -224,7 +236,6 @@
                                 </ul>
                             </div>
                         </div>
-                      
                     </div>
                 </a>
                 <!-- Power Rankings -->
@@ -240,8 +251,8 @@
                     <div class="trending-item d-flex align-items-center">
                         <span class="trending-num">02</span>
                         <div>
-                            <h6 class="fw-bold mb-0">Gov. Peter Mbah</h6>
-                            <small class="text-muted">Enugu APC Liaison</small>
+                            <h6 class="fw-bold mb-0">Gov. Hyacinth Alia</h6>
+                            <small class="text-muted">Benue (Voter autonomy surge)</small>
                         </div>
                     </div>
                     <div class="trending-item d-flex align-items-center">
@@ -255,15 +266,42 @@
             </div>
         </div>
 
-        <!-- MAIN DOUBLE COLUMN: UMAHI, FOUR MINISTERS, LATEST INTEL with article links -->
+        <!-- MAIN DOUBLE COLUMN: LATEST STORIES including GOV ALIA -->
         <div class="row">
             <div class="col-lg-8">
+                <!-- NEW STORY: Governor Alia Reaffirms Voters' Role (FEATURED) -->
+                <a href="report5.html" class="article-link" target="_blank">
+                    <div class="news-card card mb-4 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://dailypost.ng/wp-content/uploads/2024/07/Benue-governor-Hyacinth-Alia.jpg" class="img-fluid h-100 rounded-start" alt="Governor Hyacinth Alia" style="object-fit: cover; width: 100%; min-height: 200px;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-3 p-md-4">
+                                    <span class="tag-politics">🗳️ BENUE 2027</span>
+                                    <h5 class="fw-bold mt-2">Gov. Alia: "Benue voters, not elites, will decide my political future"</h5>
+                                    <p class="text-muted small">Governor rejects Senator Zam's suggestion that SGF Akume would guide voters. "Performance, not directives, will determine 2027 outcome."</p>
+                                    <div class="democracy-quote-badge mt-2">
+                                        <i class="fas fa-quote-left text-primary me-1 small"></i> 
+                                        <span class="small fw-semibold">The people of Benue are the ultimate arbiters of their votes. No external directive can override their democratic right.</span>
+                                        <div class="text-muted small mt-1">— Tersoo Kula, CPS to Governor Alia</div>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <small class="text-muted"><i class="far fa-clock me-1"></i> March 22, 2026 · Makurdi</small>
+                                        <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Full Article <i class="fas fa-arrow-right ms-1"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
                 <!-- Article 1: Umahi allegations - link to article-umahi.html -->
                 <a href="report3.html" class="article-link" target="_blank">
                     <div class="news-card card mb-4 border-0 shadow-sm">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <img src="https://media.kanyidaily.com/2022/03/08175315/David-Umahi.jpg " class="img-fluid h-100 rounded-start" alt="David Umahi" style="object-fit: cover; width: 100%;">
+                                <img src="https://media.kanyidaily.com/2022/03/08175315/David-Umahi.jpg" class="img-fluid h-100 rounded-start" alt="David Umahi" style="object-fit: cover; width: 100%;">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body p-3 p-md-4">
@@ -317,7 +355,7 @@
                             <div class="col-md-8">
                                 <div class="card-body p-3 p-md-4">
                                     <span class="tag-politics">APC INTERNAL</span>
-                                    <h5 class="fw-bold mt-2">Nentawe Yilwatda consolidates grip: 48-hour ultimatum to state chairmen</h5>
+                                    <h5 class="fw-bold mt-2">Nentawe Yilwatda consolidates grip: 48-hour ultimatum to state chairmen?</h5>
                                     <p class="text-muted small d-none d-md-block">"Renewed unity" drive intensifies as new NWC line-up warns against disloyalty.</p>
                                     <div class="d-flex align-items-center mt-3">
                                         <small class="text-muted"><i class="far fa-clock me-1"></i> 2h ago</small>
@@ -332,14 +370,20 @@
 
             <!-- RIGHT SIDEBAR (additional links) -->
             <div class="col-lg-4">
+                <!-- Alia-focused widget: Democracy spotlight -->
                 <div class="sidebar-widget bg-danger text-white">
-                    <h5 class="fw-bold">🏛️ 2027 WATCH</h5>
-                    <p class="small opacity-75">Four ministers resign ahead of guber primaries – INEC timetable looms.</p>
-                    <a href="report1.html" class="btn btn-light btn-sm w-100 fw-bold py-2 mt-2" target="_blank">See full list of aspirants</a>
+                    <h5 class="fw-bold">🗳️ DEMOCRACY SPOTLIGHT</h5>
+                    <p class="small opacity-75">Gov. Alia: "Benue voters, not elites, decide 2027." Rejects political manipulation, backs performance-based evaluation.</p>
+                    <a href="report-alia.html" class="btn btn-light btn-sm w-100 fw-bold py-2 mt-2" target="_blank">Read Alia's full statement</a>
                 </div>
 
                 <div class="sidebar-widget">
                     <h5 class="fw-bold mb-3"><i class="fas fa-newspaper text-danger me-2"></i>In the news</h5>
+                    <div class="mb-3 pb-2 border-bottom">
+                        <span class="badge bg-light text-dark mb-1">VOTER AUTONOMY</span>
+                        <p class="fw-bold small mb-0">Gov. Alia: "No one can direct Benue voters — my performance will speak"</p>
+                        <a href="report-alia.html" class="small text-danger" target="_blank">Full coverage →</a>
+                    </div>
                     <div class="mb-3 pb-2 border-bottom">
                         <span class="badge bg-light text-dark mb-1">ALLEGATION</span>
                         <p class="fw-bold small mb-0">Ohiri challenges Umahi: "public must know source of Lekki, Enugu properties"</p>
@@ -358,15 +402,25 @@
                     <a href="#" class="text-danger fw-bold text-decoration-none small">More headlines →</a>
                 </div>
 
-                <!-- Mini UK delegation follow - link to full article -->
+                <!-- UK delegation quick link -->
                 <a href="report2.html" class="article-link" target="_blank">
                     <div class="sidebar-widget text-center p-3">
-                       
                         <h6 class="fw-bold">President Tinubu, First Lady arrive London</h6>
                         <p class="small">Delegation meets with King Charles III & business leaders to boost FDI.</p>
                         <span class="badge bg-danger">📸 State Visit Day 1 – click for full coverage</span>
                     </div>
                 </a>
+
+                <!-- Benese political quote mini -->
+                <div class="sidebar-widget bg-light">
+                    <div class="d-flex align-items-start gap-2">
+                        <i class="fas fa-gavel text-danger fs-4"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1 small">Benue political flashpoint</h6>
+                            <p class="small mb-0">Senator Zam's remark on SGF Akume "guiding voters" sparks fierce rebuttal from Governor Alia's camp. Political observers call it a defining moment for voter autonomy in 2027.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -387,7 +441,7 @@
                 </div>
             </div>
             <div class="footer-bottom mt-5 pt-4 border-top border-secondary text-center">
-                <p style="color: #888; font-size: 0.8rem;">&copy; 2026 Sweep TV Nigeria. All Rights Reserved. Each article links to a separate full-story page.</p>
+                <p style="color: #888; font-size: 0.8rem;">&copy; 2026 Sweep TV Nigeria. All Rights Reserved. Governor Alia: "Benue voters decide 2027" — latest democracy update.</p>
             </div>
         </div>
     </footer>
