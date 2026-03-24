@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweep TV Nigeria | APC Political Insights & Live News</title>
+    <title>Sweep TV Nigeria | EXCLUSIVE: APC Big Names Emerge as Lagos Governorship Race Begins</title>
     <link rel="icon" type="image/png" href="LOGO.PNG">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
         }
 
         @media (max-width: 768px) {
-            .hero-container { height: 350px !important; border-radius: 0 !important; margin-left: -15px; margin-right: -15px; }
+            .hero-container { height: 400px !important; border-radius: 0 !important; margin-left: -15px; margin-right: -15px; }
             .hero-overlay { padding: 20px !important; }
             .hero-overlay h1 { font-size: 1.5rem !important; }
             .navbar-brand { font-size: 1.4rem !important; }
@@ -74,32 +74,40 @@
             white-space: nowrap;
         }
 
-        .hero-container { border-radius: 20px; overflow: hidden; position: relative; height: 500px; box-shadow: var(--card-shadow); }
-        .hero-img { width: 100%; height: 100%; object-fit: cover; }
+        .hero-container { 
+            border-radius: 24px; 
+            overflow: hidden; 
+            position: relative; 
+            height: 520px; 
+            box-shadow: var(--card-shadow);
+            background: #000;
+        }
+        .hero-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.85; }
         .hero-overlay { 
             position: absolute; bottom: 0; left: 0; right: 0; 
             padding: 40px; 
-            background: linear-gradient(transparent, rgba(0,0,0,0.9)); 
+            background: linear-gradient(transparent, rgba(0,0,0,0.92)); 
             color: white; 
         }
 
         .post-card, .news-card { 
-            background: white; border-radius: 16px; overflow: hidden; border: none; 
-            margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+            background: white; border-radius: 20px; overflow: hidden; border: none; 
+            margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .news-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 32px rgba(0,0,0,0.1);
         }
         .category-badge { font-size: 0.65rem; text-transform: uppercase; font-weight: 800; color: var(--primary-red); letter-spacing: 0.5px; }
-        .tag-politics { background: #ffebee; color: var(--primary-red); padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
-        .tag-democracy { background: #e8f0fe; color: #0b5e9e; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
+        .tag-politics { background: #ffebee; color: var(--primary-red); padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; display: inline-block; }
+        .tag-exclusive { background: #E53935; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; display: inline-block; letter-spacing: 0.5px; }
+        .tag-democracy { background: #e8f0fe; color: #0b5e9e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; }
 
         .trending-item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
         .trending-num { font-size: 1.5rem; font-weight: 800; color: #eee; margin-right: 15px; min-width: 30px; }
 
-        .sidebar-widget { background: white; border-radius: 16px; padding: 20px; box-shadow: var(--card-shadow); margin-bottom: 20px; }
+        .sidebar-widget { background: white; border-radius: 20px; padding: 24px; box-shadow: var(--card-shadow); margin-bottom: 24px; }
         
         .footer-modern { 
             background: var(--footer-dark); color: #fff; padding: 60px 0 30px; 
@@ -114,13 +122,41 @@
         }
         .press-release-bg { background-color: #f2f2f2; border-left: 4px solid var(--primary-red); }
         .small-caps { font-variant: small-caps; letter-spacing: 0.5px; }
-        .article-link { text-decoration: none; }
+        .article-link { text-decoration: none; display: block; }
         .democracy-quote-badge {
             background: #e3f2fd;
-            border-radius: 12px;
-            padding: 12px 16px;
-            margin-top: 12px;
-            border-left: 4px solid #0b5e9e;
+            border-radius: 16px;
+            padding: 14px 18px;
+            margin-top: 14px;
+            border-left: 5px solid #0b5e9e;
+        }
+        .highlight-badge {
+            background: #E53935;
+            color: white;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .candidate-chip {
+            background: rgba(255,255,255,0.15);
+            border-radius: 30px;
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            display: inline-block;
+            margin-right: 8px;
+            margin-top: 8px;
+        }
+        .exclusive-ribbon {
+            background: #E53935;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -171,106 +207,55 @@
     </nav>
 
     <main class="container mt-3 mt-md-4">
-        <!-- TICKER WITH BREAKING NEWS (updated with Alia story) -->
+        <!-- TICKER WITH BREAKING NEWS -->
         <div class="ticker-wrap">
-            <span class="ticker-label">🚨 BREAKING</span>
+            <span class="ticker-label">🚨 EXCLUSIVE</span>
             <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="font-weight: 600; font-size: 0.85rem;">
-⚡ Gov. Alia: "Benue voters, not elites, will decide 2027" — rejects Zam's remark on SGF Akume guiding electorate. | Federal government directs four ministers to resign for 2027 governorship races. | President Tinubu departs for UK state visit with high-level delegation.
+⚡ SWEEP TV EXCLUSIVE: Ambode, Hamzat, Abiru, Alausa, Muri-Okunola emerge as top Lagos governorship contenders for 2027. | Gov. Alia: "Benue voters, not elites, will decide 2027." | Federal government directs four ministers to resign for 2027 races.
             </marquee>
         </div>
 
-        <!-- TOP ROW: PRESIDENTIAL DIRECTIVE + UK VISIT -->
-        <div class="row g-4 mb-4">
-            <div class="col-lg-7">
-                <!-- Main feature: Tinubu directive with link to full press release article -->
-                <a href="report1.html" class="article-link" target="_blank">
-                    <div class="hero-container mb-4" style="height: auto; min-height: 280px;">
-                        <img src="https://gazettengr.com/wp-content/uploads/President-Bola-Ahmed-Tinubu.png" class="hero-img" alt="President Tinubu" style="opacity: 0.8;">
-                        <div class="hero-overlay" style="background: linear-gradient(transparent, #000000e0);">
-                            <span class="badge bg-danger mb-2">PRESIDENTIAL DIRECTIVE</span>
-                            <h1 class="fw-bold h3">Tinubu orders political appointees seeking elective office to resign by March 31, 2026</h1>
-                            <p class="small opacity-75 d-none d-md-block">SGF circular cites Electoral Act 2026; affects ministers, aides, DG's, CEOs.</p>
-                            <div class="mt-2 d-flex align-items-center">
-                                <span class="badge bg-dark me-2">📄 FULL PRESS RELEASE</span>
-                                <small class="text-white-50"><i class="far fa-clock me-1"></i> 17 March 2026</small>
-                            </div>
-                        </div>
+        <!-- ========== MAIN COVER STORY: LAGOS 2027 APC BIG NAMES (EXCLUSIVE) ========== -->
+        <a href="report6.html" class="article-link" target="_blank">
+            <div class="hero-container mb-4">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggwiHAmKV2C3o7YPqtOwI445UnrafnIbAdm4WB7Hw_PTYQkmm5is-mQUSzqxO0UGVFNE4AQCtxMDFe4wKnxTzSy2LwD4JmaQqzADoKEc2IHypUXVn50QrWplYiR9DufnrYDu7qj4EdJ-VESZONdZ5p_sZHjp7PPoSdHBYrjyDNNGxbUy2f6ZBVYr6paBo/s1348/1000053442.jpg" class="hero-img" alt="Lagos Skyline">
+                <div class="hero-overlay">
+                    <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                        <span class="exclusive-ribbon">🔥 SWEEP TV EXCLUSIVE</span>
+                        <span class="highlight-badge bg-dark">2027 GOVERNORSHIP WATCH</span>
                     </div>
-                </a>
-                <!-- Press release snippet with link to separate article -->
-                <div class="p-3 press-release-bg rounded-3 mb-3 d-flex justify-content-between align-items-center">
-                    <div>
-                        <p class="fw-bold mb-1"><i class="fas fa-file-alt text-danger me-2"></i>OFFICE OF THE SGF – PRESS RELEASE</p>
-                        <p class="small mb-0">President Bola Tinubu directs all political appointees seeking 2027 elective offices to resign by March 31, 2026.</p>
+                    <h1 class="fw-bold display-6">APC Big Names Emerge as Lagos Governorship Race Begins</h1>
+                    <p class="small opacity-75 d-none d-md-block">Ambode, Hamzat, Abiru, Alausa, Muri-Okunola — Five heavyweights quietly positioning for the race to succeed Governor Sanwo-Olu as Lagos APC succession battle heats up.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <span class="candidate-chip">🇳🇬 Akinwunmi Ambode (Former Gov)</span>
+                        <span class="candidate-chip">🏛️ Obafemi Hamzat (Deputy Gov)</span>
+                        <span class="candidate-chip">📊 Tokunbo Abiru (Senator)</span>
+                        <span class="candidate-chip">📚 Tunji Alausa (Minister)</span>
+                        <span class="candidate-chip">⚖️ Hakeem Muri-Okunola (PS to President)</span>
                     </div>
-                    <a href="report1.html" class="btn btn-sm btn-outline-danger" target="_blank">Read Full</a>
+                    <div class="mt-3 d-flex align-items-center gap-3">
+                        <span class="badge bg-danger">📢 FULL EXCLUSIVE REPORT</span>
+                        <small class="text-white-50"><i class="far fa-clock me-1"></i> March 24, 2026 • Lagos Bureau</small>
+                        <small class="text-white-50"><i class="fas fa-chart-line me-1"></i> Inside sources: alliances forming</small>
+                    </div>
                 </div>
             </div>
+        </a>
 
-            <div class="col-lg-5">
-                <!-- UK State Visit card with full article link -->
-                <a href="report2.html" class="article-link" target="_blank">
-                    <div class="sidebar-widget bg-white border-0">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-plane-departure text-danger fs-4 me-2"></i>
-                            <h5 class="fw-bold mb-0">PRESIDENT TINUBU DEPARTS FOR UK</h5>
-                        </div>
-                        <p class="small text-muted">March 17, 2026 – President Tinubu, First Lady Oluremi Tinubu lead high-level delegation to London for state visit.</p>
-                        <div class="row small mt-3">
-                            <div class="col-6">
-                                <ul class="list-unstyled">
-                                    <li><span class="fw-bold">•</span> Godswill Akpabio</li>
-                                    <li><span class="fw-bold">•</span> Lateef Fagbemi (SAN)</li>
-                                    <li><span class="fw-bold">•</span> Dele Alake</li>
-                                    <li><span class="fw-bold">•</span> Mohammed Idris</li>
-                                    <li><span class="fw-bold">•</span> Bianca Ojukwu</li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <ul class="list-unstyled">
-                                    <li><span class="fw-bold">•</span> Wale Edun</li>
-                                    <li><span class="fw-bold">•</span> Jumoke Oduwole</li>
-                                    <li><span class="fw-bold">•</span> Hannatu Musawa</li>
-                                    <li><span class="fw-bold">•</span> Bosun Tijani</li>
-                                    <li><span class="fw-bold">•</span> Nuhu Ribadu</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- Power Rankings -->
-                <div class="sidebar-widget mt-4">
-                    <h5 class="fw-bold mb-3">Power Rankings <i class="fas fa-chart-line text-danger ms-2"></i></h5>
-                    <div class="trending-item d-flex align-items-center">
-                        <span class="trending-num">01</span>
-                        <div>
-                            <h6 class="fw-bold mb-0">Nentawe Yilwatda</h6>
-                            <small class="text-muted">National Chairman (Rising)</small>
-                        </div>
-                    </div>
-                    <div class="trending-item d-flex align-items-center">
-                        <span class="trending-num">02</span>
-                        <div>
-                            <h6 class="fw-bold mb-0">Gov. Hyacinth Alia</h6>
-                            <small class="text-muted">Benue (Voter autonomy surge)</small>
-                        </div>
-                    </div>
-                    <div class="trending-item d-flex align-items-center">
-                        <span class="trending-num">03</span>
-                        <div>
-                            <h6 class="fw-bold mb-0">David Umahi</h6>
-                            <small class="text-muted">Minister of Works (scrutiny)</small>
-                        </div>
-                    </div>
-                </div>
+        <!-- Quick insight: Lagos contenders snapshot -->
+        <div class="bg-white rounded-4 p-3 mb-4 shadow-sm d-flex justify-content-between align-items-center flex-wrap">
+            <div>
+                <i class="fas fa-city text-danger me-2 fs-5"></i>
+                <strong class="me-2">Exclusive insight:</strong> Political observers reveal that the Lagos APC succession race is already witnessing underground consultations. Zoning debate, incumbency factor, and federal influence will shape the primary.
             </div>
+            <a href="lagos-2027-exclusive.html" class="btn btn-sm btn-outline-danger rounded-pill mt-2 mt-sm-0" target="_blank">Read full analysis →</a>
         </div>
 
-        <!-- MAIN DOUBLE COLUMN: LATEST STORIES including GOV ALIA -->
+        <!-- MAIN DOUBLE COLUMN: REST OF THE NEWS (Alia story moved down + others) -->
         <div class="row">
             <div class="col-lg-8">
-                <!-- NEW STORY: Governor Alia Reaffirms Voters' Role (FEATURED) -->
-                <a href="report5.html" class="article-link" target="_blank">
+                <!-- Alia story: now positioned as secondary highlight (pushed down) -->
+                <a href="report-alia-full.html" class="article-link" target="_blank">
                     <div class="news-card card mb-4 border-0 shadow-sm">
                         <div class="row g-0">
                             <div class="col-md-5">
@@ -279,16 +264,15 @@
                             <div class="col-md-7">
                                 <div class="card-body p-3 p-md-4">
                                     <span class="tag-politics">🗳️ BENUE 2027</span>
-                                    <h5 class="fw-bold mt-2">Gov. Alia: "Benue voters, not elites, will decide my political future"</h5>
-                                    <p class="text-muted small">Governor rejects Senator Zam's suggestion that SGF Akume would guide voters. "Performance, not directives, will determine 2027 outcome."</p>
-                                    <div class="democracy-quote-badge mt-2">
+                                    <h5 class="fw-bold mt-2">Gov. Alia: "Benue voters, not elites, will decide 2027" — rejects Zam's remark on SGF Akume</h5>
+                                    <p class="text-muted small">Governor rejects Senator Zam's suggestion that SGF Akume would "guide voters." "Performance, not directives, will determine 2027 outcome."</p>
+                                    <div class="democracy-quote-badge mt-2 p-2">
                                         <i class="fas fa-quote-left text-primary me-1 small"></i> 
                                         <span class="small fw-semibold">The people of Benue are the ultimate arbiters of their votes. No external directive can override their democratic right.</span>
-                                        <div class="text-muted small mt-1">— Tersoo Kula, CPS to Governor Alia</div>
                                     </div>
                                     <div class="d-flex align-items-center mt-3">
                                         <small class="text-muted"><i class="far fa-clock me-1"></i> March 22, 2026 · Makurdi</small>
-                                        <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Full Article <i class="fas fa-arrow-right ms-1"></i></span>
+                                        <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Full Article →</span>
                                     </div>
                                 </div>
                             </div>
@@ -296,21 +280,53 @@
                     </div>
                 </a>
 
-                <!-- Article 1: Umahi allegations - link to article-umahi.html -->
+                <!-- Four ministers directive (Tinubu) -->
+                <a href="report1.html" class="article-link" target="_blank">
+                    <div class="news-card card mb-4 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <span class="tag-politics">⚡ GUBER 2027 DIRECTIVE</span>
+                                <span class="badge bg-light text-dark">Breaking</span>
+                            </div>
+                            <h5 class="fw-bold mt-2">Federal government directs four ministers to resign for governorship elections</h5>
+                            <p class="small text-muted">Sources confirm pre-election protocol: affected ministers must step down ahead of primaries as Tinubu enforces 2027 transition rule.</p>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-2"><span class="badge bg-danger me-2">1</span> Dr. Maruf Tunji Alausa <span class="text-muted">(Education, Lagos)</span></li>
+                                        <li class="mb-2"><span class="badge bg-danger me-2">2</span> Chief Adebayo Adelabu <span class="text-muted">(Power, Oyo)</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled small">
+                                        <li class="mb-2"><span class="badge bg-danger me-2">3</span> Yusuf Tuggar <span class="text-muted">(Foreign Aff, Bauchi)</span></li>
+                                        <li class="mb-2"><span class="badge bg-danger me-2">4</span> Prof. M. A. Pate <span class="text-muted">(Health, Bauchi)</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-2">
+                                <small class="text-muted"><i class="far fa-clock me-1"></i> March 17, 2026 · Aso Villa</small>
+                                <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Full Story →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Umahi allegations -->
                 <a href="report3.html" class="article-link" target="_blank">
                     <div class="news-card card mb-4 border-0 shadow-sm">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <img src="https://media.kanyidaily.com/2022/03/08175315/David-Umahi.jpg" class="img-fluid h-100 rounded-start" alt="David Umahi" style="object-fit: cover; width: 100%;">
+                                <img src="https://media.kanyidaily.com/2022/03/08175315/David-Umahi.jpg" class="img-fluid h-100 rounded-start" alt="David Umahi" style="object-fit: cover; width: 100%; min-height: 180px;">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body p-3 p-md-4">
                                     <span class="tag-politics">🔥 EXCLUSIVE: ALLEGATIONS</span>
                                     <h5 class="fw-bold mt-2">Businesswoman Tracyniter Ohiri accuses Minister Umahi of sexual harassment, fraud</h5>
-                                    <p class="text-muted small">Ohiri alleges Umahi labelled her a fraud after $250m FDI claim; demands transparency over his Lekki, Enugu, Ebonyi properties. "He entered my hotel room in a towel."</p>
+                                    <p class="text-muted small">Ohiri alleges Umahi labelled her a fraud after $250m FDI claim; demands transparency over his Lekki, Enugu, Ebonyi properties.</p>
                                     <div class="d-flex align-items-center mt-2">
                                         <small class="text-muted"><i class="far fa-clock me-1"></i> 5h ago · Abuja</small>
-                                        <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Full Article <i class="fas fa-arrow-right ms-1"></i></span>
+                                        <span class="ms-auto text-danger fw-bold small">Read Full Article →</span>
                                     </div>
                                 </div>
                             </div>
@@ -318,48 +334,45 @@
                     </div>
                 </a>
 
-                <!-- Article 2: Four ministers directed to resign (full article link) -->
-                <a href="report1.html" class="article-link" target="_blank">
+                <!-- UK State Visit -->
+                <a href="report2.html" class="article-link" target="_blank">
                     <div class="news-card card mb-4 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <span class="tag-politics">⚡ GUBER 2027 SHOCKER</span>
-                            <h5 class="fw-bold mt-2">Federal government directs four ministers to resign for governorship elections</h5>
-                            <p class="small text-muted">Sources confirm pre-election protocol: affected ministers must step down ahead of primaries.</p>
-                            <div class="row mt-3">
-                                <div class="col-6">
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><span class="badge bg-danger me-2">1</span> Dr. Maruf Tunji Alausa <span class="text-muted small">(Education, Lagos)</span></li>
-                                        <li class="mb-2"><span class="badge bg-danger me-2">2</span> Chief Adebayo Adelabu <span class="text-muted small">(Power, Oyo)</span></li>
-                                    </ul>
-                                </div>
-                                <div class="col-6">
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><span class="badge bg-danger me-2">3</span> Yusuf Tuggar <span class="text-muted small">(Foreign Aff, Bauchi)</span></li>
-                                        <li class="mb-2"><span class="badge bg-danger me-2">4</span> Prof. M. A. Pate <span class="text-muted small">(Health, Bauchi)</span></li>
-                                    </ul>
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://gazettengr.com/wp-content/uploads/President-Bola-Ahmed-Tinubu.png" class="img-fluid rounded-start" alt="President Tinubu UK Visit" style="object-fit: cover; width: 100%; height: 100%; min-height: 170px;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-3 p-md-4">
+                                    <span class="tag-politics">🌍 DIPLOMACY</span>
+                                    <h5 class="fw-bold mt-2">President Tinubu departs for UK state visit with high-level delegation</h5>
+                                    <p class="text-muted small">President, First Lady lead delegation including Akpabio, Ribadu, Edun for trade talks with King Charles III.</p>
+                                    <div class="small text-muted mt-2">
+                                        <i class="fas fa-user-friends me-1"></i> 15 ministers, presidential aides in entourage
+                                    </div>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <span class="ms-auto text-danger fw-bold small">Read Delegation Story →</span>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="small mt-2"><i class="fas fa-chart-line text-danger me-1"></i> Political analysts: intense maneuvering in Lagos, Oyo, Bauchi.</p>
-                            <span class="text-danger fw-bold text-decoration-none small">Read full story & analysis →</span>
                         </div>
                     </div>
                 </a>
 
-                <!-- Article 3: Nentawe Yilwatda (separate article link) -->
+                <!-- Nentawe Yilwatda APC internal -->
                 <a href="report4.html" class="article-link" target="_blank">
-                    <div class="news-card card">
+                    <div class="news-card card border-0 shadow-sm">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="https://tse4.mm.bing.net/th/id/OIP.4ISTweifG38nnhNaC41zUAHaGm?rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid h-100 rounded-start" alt="Nentawe">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.4ISTweifG38nnhNaC41zUAHaGm?rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded-start" alt="Nentawe Yilwatda" style="object-fit: cover; width: 100%; height: 100%;">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body p-3 p-md-4">
                                     <span class="tag-politics">APC INTERNAL</span>
                                     <h5 class="fw-bold mt-2">Nentawe Yilwatda consolidates grip: 48-hour ultimatum to state chairmen?</h5>
-                                    <p class="text-muted small d-none d-md-block">"Renewed unity" drive intensifies as new NWC line-up warns against disloyalty.</p>
+                                    <p class="text-muted small">"Renewed unity" drive intensifies as new NWC line-up warns against disloyalty ahead of 2027 primaries.</p>
                                     <div class="d-flex align-items-center mt-3">
                                         <small class="text-muted"><i class="far fa-clock me-1"></i> 2h ago</small>
-                                        <span class="ms-auto text-danger fw-bold text-decoration-none small">Read Article <i class="fas fa-arrow-right ms-1"></i></span>
+                                        <span class="ms-auto text-danger fw-bold small">Read Article →</span>
                                     </div>
                                 </div>
                             </div>
@@ -368,21 +381,40 @@
                 </a>
             </div>
 
-            <!-- RIGHT SIDEBAR (additional links) -->
+            <!-- RIGHT SIDEBAR: Enhanced with Lagos 2027 focus + Alia context -->
             <div class="col-lg-4">
-                <!-- Alia-focused widget: Democracy spotlight -->
+                <!-- Lagos 2027: The Contenders Widget -->
                 <div class="sidebar-widget bg-danger text-white">
-                    <h5 class="fw-bold">🗳️ DEMOCRACY SPOTLIGHT</h5>
-                    <p class="small opacity-75">Gov. Alia: "Benue voters, not elites, decide 2027." Rejects political manipulation, backs performance-based evaluation.</p>
-                    <a href="report-alia.html" class="btn btn-light btn-sm w-100 fw-bold py-2 mt-2" target="_blank">Read Alia's full statement</a>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-crown fs-3"></i>
+                        <h5 class="fw-bold mb-0">🏙️ LAGOS 2027: THE RACE</h5>
+                    </div>
+                    <p class="small opacity-90">Five APC heavyweights are already maneuvering behind the scenes. Sources reveal that zoning, governor's endorsement, and federal influence will determine the ticket.</p>
+                    <div class="bg-white text-dark p-3 rounded-3 mt-2">
+                        <div class="fw-bold mb-2">🔹 Top contenders:</div>
+                        <div class="small">
+                            <div class="mb-1">✓ <strong>Akinwunmi Ambode</strong> — Former governor, rebuilding network</div>
+                            <div class="mb-1">✓ <strong>Obafemi Hamzat</strong> — Deputy Governor, continuity candidate</div>
+                            <div class="mb-1">✓ <strong>Tokunbo Abiru</strong> — Senator, Lagos East powerhouse</div>
+                            <div class="mb-1">✓ <strong>Tunji Alausa</strong> — Minister, grassroots mobilization</div>
+                            <div class="mb-1">✓ <strong>Hakeem Muri-Okunola</strong> — Presidential aide, technocrat appeal</div>
+                        </div>
+                    </div>
+                    <a href="lagos-2027-exclusive.html" class="btn btn-light btn-sm w-100 fw-bold py-2 mt-3" target="_blank">📰 Read the full exclusive</a>
                 </div>
 
+                <!-- In the news (includes Alia reference) -->
                 <div class="sidebar-widget">
-                    <h5 class="fw-bold mb-3"><i class="fas fa-newspaper text-danger me-2"></i>In the news</h5>
+                    <h5 class="fw-bold mb-3"><i class="fas fa-newspaper text-danger me-2"></i>Latest headlines</h5>
                     <div class="mb-3 pb-2 border-bottom">
                         <span class="badge bg-light text-dark mb-1">VOTER AUTONOMY</span>
-                        <p class="fw-bold small mb-0">Gov. Alia: "No one can direct Benue voters — my performance will speak"</p>
-                        <a href="report-alia.html" class="small text-danger" target="_blank">Full coverage →</a>
+                        <p class="fw-bold small mb-0">Alia: "No one can direct Benue voters — my performance will speak louder"</p>
+                        <a href="report-alia-full.html" class="small text-danger" target="_blank">Full coverage →</a>
+                    </div>
+                    <div class="mb-3 pb-2 border-bottom">
+                        <span class="badge bg-light text-dark mb-1">LAGOS 2027 EXCLUSIVE</span>
+                        <p class="fw-bold small mb-0">Ambode, Hamzat, Abiru, Alausa, Muri-Okunola: Who has the edge?</p>
+                        <a href="lagos-2027-exclusive.html" class="small text-danger" target="_blank">Analysis →</a>
                     </div>
                     <div class="mb-3 pb-2 border-bottom">
                         <span class="badge bg-light text-dark mb-1">ALLEGATION</span>
@@ -390,7 +422,7 @@
                         <a href="report3.html" class="small text-danger" target="_blank">Full story →</a>
                     </div>
                     <div class="mb-3 pb-2 border-bottom">
-                        <span class="badge bg-light text-dark mb-1">DIRECTIVE</span>
+                        <span class="badge bg-light text-dark mb-1">PRESIDENTIAL DIRECTIVE</span>
                         <p class="fw-bold small mb-0">SGF circular: all political appointees for 2027 races resign by March 31</p>
                         <a href="report1.html" class="small text-danger" target="_blank">Read circular →</a>
                     </div>
@@ -402,24 +434,39 @@
                     <a href="#" class="text-danger fw-bold text-decoration-none small">More headlines →</a>
                 </div>
 
-                <!-- UK delegation quick link -->
-                <a href="report2.html" class="article-link" target="_blank">
-                    <div class="sidebar-widget text-center p-3">
-                        <h6 class="fw-bold">President Tinubu, First Lady arrive London</h6>
-                        <p class="small">Delegation meets with King Charles III & business leaders to boost FDI.</p>
-                        <span class="badge bg-danger">📸 State Visit Day 1 – click for full coverage</span>
-                    </div>
-                </a>
-
-                <!-- Benese political quote mini -->
+                <!-- Benue/Alia mini widget -->
                 <div class="sidebar-widget bg-light">
-                    <div class="d-flex align-items-start gap-2">
-                        <i class="fas fa-gavel text-danger fs-4"></i>
+                    <div class="d-flex align-items-start gap-3">
+                        <i class="fas fa-landmark text-danger fs-3"></i>
                         <div>
-                            <h6 class="fw-bold mb-1 small">Benue political flashpoint</h6>
-                            <p class="small mb-0">Senator Zam's remark on SGF Akume "guiding voters" sparks fierce rebuttal from Governor Alia's camp. Political observers call it a defining moment for voter autonomy in 2027.</p>
+                            <h6 class="fw-bold mb-1">Benue: Voter independence on the line</h6>
+                            <p class="small mb-0">Governor Alia’s firm stance against elite influence resonates with civil society. Political analysts see 2027 as a referendum on voter autonomy in Benue.</p>
+                            <hr class="my-2">
+                            <div class="small fw-semibold">📍 Senator Zam: "SGF Akume will guide voters"<br>→ Alia: "Benue people are not subjects of any external directive."</div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Subscribe widget -->
+                <div class="sidebar-widget text-center p-3 border">
+                    <i class="fas fa-bell text-danger fs-3 mb-2"></i>
+                    <h6 class="fw-bold">Get exclusive 2027 updates</h6>
+                    <p class="small">Subscribe for insider political intelligence</p>
+                    <button class="btn btn-danger btn-sm rounded-pill px-4">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lagos political landscape card -->
+        <div class="bg-white rounded-4 p-4 mt-4 shadow-sm">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <span class="tag-exclusive mb-2 d-inline-block">🏆 SWEEP TV INSIGHT</span>
+                    <h5 class="fw-bold">Why the Lagos 2027 governorship race matters for APC's national calculation</h5>
+                    <p class="small text-muted">With Lagos being Nigeria's economic powerhouse and the APC's flagship state, the succession battle will test party cohesion, zoning principles, and the influence of the presidency. The emergence of five top contenders signals a competitive primary ahead.</p>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <a href="lagos-2027-exclusive.html" class="btn btn-danger rounded-pill btn-sm" target="_blank">Read Exclusive →</a>
                 </div>
             </div>
         </div>
@@ -431,6 +478,7 @@
                 <div class="col-lg-6">
                     <h4 class="text-white fw-800">SWEEP<span class="text-danger">TV</span></h4>
                     <p style="color: #aaa; font-size: 0.9rem;">Nigeria's premier digital media platform for governance and development. Unbiased, intense, political.</p>
+                    <p class="small mt-2 text-white-50"><i class="fas fa-check-circle text-danger me-1"></i> Exclusive: APC Big Names Emerge in Lagos Governorship Race for 2027</p>
                 </div>
                 <div class="col-lg-6">
                     <h6 class="fw-bold mb-3 text-white">STAY UPDATED</h6>
@@ -441,7 +489,7 @@
                 </div>
             </div>
             <div class="footer-bottom mt-5 pt-4 border-top border-secondary text-center">
-                <p style="color: #888; font-size: 0.8rem;">&copy; 2026 Sweep TV Nigeria. All Rights Reserved. Governor Alia: "Benue voters decide 2027" — latest democracy update.</p>
+                <p style="color: #888; font-size: 0.8rem;">&copy; 2026 Sweep TV Nigeria. All Rights Reserved. Today's exclusive cover: Lagos 2027 — APC Big Names Emerge as Governorship Race Begins.</p>
             </div>
         </div>
     </footer>
