@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweep TV Nigeria | The Making of APC: Unity, Power & The Cracks That Followed</title>
+    <link rel="icon" type="image/png" href="LOGO.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-red: #E53935;
+            --soft-bg: #f8faf9;
+            --footer-dark: #111111;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--soft-bg);
+            color: #222;
+        }
+        .navbar {
+            background: rgba(255,255,255,0.98) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--primary-red) !important;
+            letter-spacing: -1px;
+        }
+        .article-header {
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .lead-image {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 24px;
+            margin: 1.5rem 0;
+        }
+        .content-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+        .tag {
+            background: #ffebee;
+            color: var(--primary-red);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+        .democracy-box {
+            background: #e3f2fd;
+            border-left: 6px solid #0b5e9e;
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+        }
+        .quote-block {
+            background: #f1f8e9;
+            border-left: 5px solid #2e7d32;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.8rem 0;
+            font-style: italic;
+        }
+        .timeline-item {
+            display: flex;
+            gap: 1.2rem;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+        .timeline-date {
+            min-width: 110px;
+            font-weight: 700;
+            color: var(--primary-red);
+        }
+        .reaction-card {
+            background: #fef7e0;
+            border-radius: 18px;
+            padding: 1.2rem;
+            border: 1px solid #ffe0a3;
+        }
+        .editorial-note {
+            background: #f2f2f2;
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            font-size: 0.9rem;
+            border-left: 4px solid var(--primary-red);
+        }
+        .footer-modern {
+            background: #111;
+            color: #fff;
+            padding: 60px 0 30px;
+            border-radius: 40px 40px 0 0;
+            margin-top: 60px;
+        }
+        .back-home {
+            margin-bottom: 1rem;
+            display: inline-block;
+            color: var(--primary-red);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .architect-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.2rem;
+            transition: all 0.2s ease;
+            border: 1px solid #eee;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            height: 100%;
+        }
+        .architect-card:hover {
+            border-color: #ffd0cf;
+            transform: translateY(-3px);
+        }
+        @media (max-width: 768px) {
+            .article-title { font-size: 1.8rem; }
+            .content-card { padding: 1.5rem; }
+            .timeline-item { flex-direction: column; gap: 0.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                SWEEP<span style="color:#222">TV</span>
+                <span class="ms-1 badge bg-danger animate-pulse" style="font-size: 0.55rem; vertical-align: middle;">LIVE</span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-danger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-danger" href="#" data-bs-toggle="dropdown">APC Central</a>
+                        <ul class="dropdown-menu border-0 shadow-sm">
+                            <li><a class="dropdown-item" href="nwc.html">NWC Updates</a></li>
+                            <li><a class="dropdown-item" href="roadmap.html">2027 Roadmap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="politics.html">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="economy.html">Economy</a></li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a href="subscribe.html" class="btn btn-danger rounded-pill px-4 w-100 w-lg-auto">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <!-- back link -->
+        <a href="index.html" class="back-home"><i class="fas fa-arrow-left me-2"></i>Back to Sweep TV</a>
+
+        <!-- article header -->
+        <div class="article-header">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="tag">🏛️ POLITICAL HISTORY</span>
+                <span class="tag" style="background:#e9e9e9; color:#000;">APC ORIGINS</span>
+                <span class="tag" style="background:#fff0db; color:#b95b0d;">MERGER & LEGACY</span>
+            </div>
+            <h1 class="article-title">The Making of APC: Unity That Won Power—and the Cracks That Followed</h1>
+            <div class="d-flex align-items-center mt-3 text-muted">
+                <i class="far fa-clock me-2"></i> <span>Published April 5, 2026 · in-depth analysis</span>
+                <span class="mx-3">|</span>
+                <span class="fw-bold">By Sweep TV political bureau — Abuja</span>
+            </div>
+        </div>
+
+        <!-- main content -->
+        <div class="content-card">
+            <!-- editorial context -->
+            <div class="editorial-note mb-4">
+                <i class="fas fa-chart-line text-danger me-2"></i> <strong>Retrospective special:</strong> In 2013, Nigeria witnessed one of the most defining political moments in its democratic history—the birth of the All Progressives Congress (APC). It was not just the formation of another political party, but a strategic alliance of powerful opposition forces determined to end the dominance of the People's Democratic Party (PDP), which had governed the country since 1999. Over a decade later, we examine the merger that made history and the internal fractures that have shaped Nigeria's ruling party ever since.
+            </div>
+
+            <p class="lead fw-semibold fs-5">A coalition born from ambition and necessity. The APC emerged as a formidable giant, swallowing the old order in 2015. But beneath the veneer of victory lay a patchwork of rival factions, ideological contradictions, and power blocs. Today, as the party navigates another election cycle, understanding its origin story is essential to decoding Nigeria's political future — from the strategic genius of its formation to the enduring tensions that threaten its cohesion.</p>
+
+            <!-- the power behind the merger -->
+            <h3 class="fw-bold h5 mt-4"><i class="fas fa-people-arrows text-danger me-2"></i>The Power Behind the Merger: Architects of a New Nigeria</h3>
+            <p>The APC emerged from the merger of major opposition parties, but more importantly, it was built on the strength of key political heavyweights. At the forefront was <strong>Bola Ahmed Tinubu</strong>, widely regarded as the chief architect of the coalition. Through his influence in the South-West and leadership of the Action Congress of Nigeria (ACN), Tinubu played a crucial role in uniting disparate political interests.</p>
+            
+            <div class="row g-3 mt-2">
+                <div class="col-md-6">
+                    <div class="architect-card">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fas fa-crown fs-1 text-danger opacity-75"></i>
+                            <div>
+                                <h5 class="fw-bold mb-0">Bola Ahmed Tinubu</h5>
+                                <small class="text-muted">National Leader, ACN (South-West)</small>
+                                <p class="small mt-2 mb-0">The strategic mastermind who united the opposition. Tinubu’s political infrastructure and negotiation skills were pivotal in forging the merger, leveraging his South-West base to create a national coalition.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="architect-card">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fas fa-gavel fs-1 text-danger opacity-75"></i>
+                            <div>
+                                <h5 class="fw-bold mb-0">Muhammadu Buhari</h5>
+                                <small class="text-muted">CPC (North-West)</small>
+                                <p class="small mt-2 mb-0">Brought a massive, loyal voter base and an anti-corruption image. His reputation for discipline became a central pillar of the party’s appeal, especially in the North.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="architect-card">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fas fa-briefcase fs-1 text-danger opacity-75"></i>
+                            <div>
+                                <h5 class="fw-bold mb-0">Atiku Abubakar</h5>
+                                <small class="text-muted">New PDP Bloc (North-East)</small>
+                                <p class="small mt-2 mb-0">Joined the coalition with influential governors and lawmakers, adding national breadth and financial muscle to the merger.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="architect-card">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fas fa-chalkboard-user fs-1 text-danger opacity-75"></i>
+                            <div>
+                                <h5 class="fw-bold mb-0">Ogbonnaya Onu & Rochas Okorocha</h5>
+                                <small class="text-muted">APGA / ANPP (South-East / South-West)</small>
+                                <p class="small mt-2 mb-0">Key regional figures who brought critical electoral blocks and legitimized the APC’s claim to being a truly national alternative.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-3">Despite their diverse political ideologies and ambitions, these leaders found common ground in one goal: to wrest power from the PDP. The merger was officially sealed in February 2013, and by mid-2013, the Independent National Electoral Commission (INEC) recognized the APC as Nigeria's newest political party.</p>
+
+            <!-- historic victory block -->
+            <div class="democracy-box mt-4">
+                <h4 class="fw-bold h5"><i class="fas fa-vote-yea text-primary me-2"></i>A Historic Victory: The 2015 Watershed</h4>
+                <p>That goal was realized in the 2015 Nigerian General Election, when APC’s candidate, Muhammadu Buhari, defeated incumbent President Goodluck Jonathan. It was a landmark moment—the first time an opposition party successfully unseated a sitting government in Nigeria. The victory was widely celebrated as a major step forward for democratic consolidation in the country. For the first time in sixteen years, the PDP was relegated to opposition, and a new ruling party took the reins of Africa's largest democracy.</p>
+                <p class="mb-0">The euphoria, however, masked deep structural issues. The APC had won power, but it had not yet become a truly cohesive political entity. The glue that held it together — the shared enemy, the PDP — was gone.</p>
+            </div>
+
+            <!-- timeline: rise & cracks -->
+            <h3 class="fw-bold h5 mt-4"><i class="fas fa-timeline text-danger me-2"></i>From Unity to Friction: The Cracks That Followed</h3>
+            <div class="timeline-item mt-3">
+                <div class="timeline-date">2013-2015</div>
+                <div><strong>Merger & Campaign Unity:</strong> The APC campaigns as a disciplined opposition, presenting Buhari as a reformed democrat. Strategic power-sharing agreements keep factions aligned.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2015-2017</div>
+                <div><strong>Post-Victory Power Tussles:</strong> Disagreements emerge between Buhari loyalists and Tinubu's faction over key appointments (ministries, boards, parastatals). Control of party machinery becomes a recurring flashpoint.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Late 2017</div>
+                <div><strong>Atiku’s Defection:</strong> Atiku Abubakar exits the APC and returns to the PDP, citing lack of internal democracy and marginalization of key stakeholders. His departure signals a major fracture.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2018-2019</div>
+                <div><strong>Second-Term Turbulence:</strong> Governor Rochas Okorocha and other party leaders become openly critical of the party leadership, pointing to marginalization. Several states witness factional disputes and defections.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2022-2023</div>
+                <div><strong>Primary Battles & Muslim-Muslim Ticket:</strong> Tinubu wins APC presidential ticket amid fierce competition. His choice of a northern Muslim running mate (Kashim Shettima) sparks religious and regional debates, exposing deeper ideological splits.</div>
+            </div>
+
+            <!-- quote from analyst -->
+            <div class="quote-block mt-4">
+                <i class="fas fa-microphone-alt text-success me-2"></i> “The APC was, from the outset, a coalition of convenience rather than a party built on a unified ideology. Once in power, longstanding rivalries and competing interests resurfaced. The party has survived by constantly renegotiating power among its barons, but that model is brittle.” <br>— <strong>Dr. Aliyu Bello, political historian, April 2026</strong>
+            </div>
+
+            <!-- defections and divisions deep dive -->
+            <h3 class="fw-bold h5 mt-4"><i class="fas fa-person-walking-arrow-right text-danger me-2"></i>Defections and Divisions: The Exodus Begins</h3>
+            <p>One of the most notable fractures came in 2017, when Atiku Abubakar exited the APC and returned to the PDP, citing concerns over internal democracy and direction within the party. Similarly, Rochas Okorocha and other party leaders became increasingly critical of the party's leadership, pointing to marginalization and lack of cohesion. Across several states — from Zamfara to Ogun, from Imo to Adamawa — factional disputes, power struggles, and defections became recurring issues, gradually weakening the internal unity that once defined the APC.</p>
+            <p>The party also saw high-profile exits of founding members like Senator Rabiu Kwankwaso (who later formed the NNPP) and a steady stream of legislators crossing the aisle. While the APC managed to retain power at the federal level, the underlying tensions forced the party's leadership to adopt increasingly centralized control mechanisms, often alienating local power brokers.</p>
+
+            <!-- survival amid crisis -->
+            <div class="bg-light p-4 rounded-4 mt-4">
+                <h5 class="fw-bold"><i class="fas fa-shield-alt text-danger me-2"></i>Survival Amid Crisis: How APC Has Endured</h5>
+                <p>Despite these challenges, the APC managed to retain power at the federal level in subsequent elections. In 2023, Bola Ahmed Tinubu—one of the original architects of the merger—rose to the presidency under the party’s platform. His victory demonstrated the party’s enduring electoral strength, particularly in the South-West and parts of the North. But it also revealed new fault lines: the contentious Muslim-Muslim ticket, the alienation of some Christian leaders, and ongoing battles for control of National Assembly leadership.</p>
+                <p class="mb-0">The APC's ability to survive, analysts argue, owes less to ideological coherence and more to the control of state resources, strategic use of incumbency, and the weakness of opposition parties to present a unified alternative. Yet, as the 2027 elections approach, the same foundational cracks — between progressives and conservatives, between federal power brokers and state-level chieftains — remain unresolved.</p>
+            </div>
+
+            <!-- legacy and lessons -->
+            <div class="democracy-box mt-4" style="background:#fff4e5; border-left-color:#c47b2e;">
+                <i class="fas fa-book-open text-danger me-2"></i> <strong>Legacy & Lessons:</strong> The story of the APC is one of ambition, strategy, and political calculation. It proved that a united opposition can achieve what once seemed impossible—unseating an entrenched ruling party. Yet, it also highlights a critical lesson in coalition politics: without strong ideological cohesion and internal balance, even the most powerful alliances can struggle to endure. From unity to division, the APC’s journey remains a defining chapter in Nigeria’s political evolution.
+            </div>
+
+            <!-- stakeholder reflection: founding member view -->
+            <div class="reaction-card mt-4">
+                <div class="d-flex align-items-start gap-3">
+                    <i class="fas fa-landmark text-warning fs-3"></i>
+                    <div>
+                        <h5 class="fw-bold">Founding member reflects: “We dreamed of a different kind of party”</h5>
+                        <p class="mb-1">A former interim national officer of the APC (who spoke on condition of anonymity) told Sweep TV: “In the beginning, we believed the APC would institutionalize internal democracy, rotate power, and break the godfather stranglehold. But old habits returned. The merger was a marriage of necessity, not conviction. That’s the root of the cracks.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- comparative perspective: PDP vs APC governance model -->
+            <h3 class="fw-bold h5 mt-4"><i class="fas fa-balance-scale text-danger me-2"></i>Comparing Political Eras: APC vs. PDP</h3>
+            <p>Political scientists note that while the PDP was also a coalition of elites, it developed stronger internal conflict-resolution mechanisms over sixteen years in power. The APC, by contrast, has relied more heavily on the personal authority of its top leaders to mediate disputes — a system that becomes fragile when those leaders are in competition. As Nigeria moves toward 2027, the APC’s capacity to manage internal succession struggles, especially for the presidency and key governorships, will determine whether the party remains the country's dominant political force or begins a slow unraveling.</p>
+            
+            <div class="row mt-3 g-3">
+                <div class="col-md-6">
+                    <div class="border rounded-3 p-3 bg-white">
+                        <i class="fas fa-chart-line text-success me-2"></i>
+                        <strong>APC strengths:</strong> Grassroots mobilization in North-West & South-West, control of federal patronage, strong presidential leadership.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="border rounded-3 p-3 bg-white">
+                        <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                        <strong>APC weaknesses:</strong> Frequent defections, factional wars in state chapters, lack of clear ideological platform, succession crises.
+                    </div>
+                </div>
+            </div>
+
+            <!-- looking ahead: 2027 and beyond -->
+            <div class="mt-4 pt-2 border-top">
+                <h5 class="fw-bold">What next for the APC? The 2027 test</h5>
+                <p>As President Tinubu’s first term progresses, the APC faces critical decisions: Will it embrace genuine internal democracy or tighten top-down control? Can it reconcile warring factions in states like Kano, Rivers, and Ogun? And most importantly, who will succeed Tinubu in 2027? The answers to these questions will determine whether the APC can defy the odds and avoid the fate of past Nigerian ruling parties that splintered after losing the presidency.</p>
+                <p class="fw-semibold">Key takeaway: The APC's origin story is a tale of brilliant coalition-building followed by the slow erosion of trust. For Nigeria's democracy, the party's ability to reform itself is as important as any single election outcome.</p>
+            </div>
+
+            <!-- social media & share -->
+            <div class="mt-4 d-flex justify-content-between align-items-center">
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-dark"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <span class="badge bg-danger">#APCHistory #MergerToDivision #NigeriaPolitics</span>
+            </div>
+        </div>
+
+        <!-- related stories (APC evolution) -->
+        <div class="row g-4 mt-3">
+            <div class="col-md-6">
+                <div class="bg-white p-3 rounded-4 d-flex align-items-center">
+                    <i class="fas fa-city text-danger fs-2 me-3"></i>
+                    <div>
+                        <small class="text-danger fw-bold">INSIDE APC</small>
+                        <p class="mb-0 fw-semibold">Tinubu, Buhari, Atiku: How the 'Triple Alliance' Shaped Modern Nigeria</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-white p-3 rounded-4 d-flex align-items-center">
+                    <i class="fas fa-chart-simple text-danger fs-2 me-3"></i>
+                    <div>
+                        <small class="text-danger fw-bold">STATE OF THE PARTY</small>
+                        <p class="mb-0 fw-semibold">APC’s National Convention: A Test of Cohesion Ahead of 2027</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- extra editorial note on coalition politics -->
+        <div class="bg-white rounded-4 p-3 mt-4 shadow-sm">
+            <div class="d-flex gap-3 align-items-center">
+                <i class="fas fa-chalkboard-user fs-1 text-secondary"></i>
+                <div>
+                    <span class="badge bg-dark mb-1">SWEEP TV INSIGHT</span>
+                    <p class="mb-0 fw-semibold">The APC's journey from a triumphant merger in 2013 to a party grappling with internal fissures offers a masterclass in coalition governance. As Nigeria heads toward 2027, the question is no longer whether the APC can win, but whether it can hold itself together long enough to do so.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-modern">
+        <div class="container text-center text-lg-start">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h4 class="text-white fw-800">SWEEP<span class="text-danger">TV</span></h4>
+                    <p style="color:#aaa;">Unscripted, unfiltered — covering Nigeria's power shifts, from Lagos to the federation.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="fw-bold text-white">STAY UPDATED</h6>
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark border-secondary text-white" placeholder="Email">
+                        <button class="btn btn-danger px-4">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-3 border-top border-secondary text-center">
+                <p style="color:#888; font-size:0.8rem;">&copy; 2026 Sweep TV Nigeria — The Making of APC: Unity That Won Power—and the Cracks That Followed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
