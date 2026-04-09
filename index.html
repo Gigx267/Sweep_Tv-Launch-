@@ -103,6 +103,7 @@
         .tag-politics { background: #ffebee; color: var(--primary-red); padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; display: inline-block; }
         .tag-exclusive { background: #E53935; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; display: inline-block; letter-spacing: 0.5px; }
         .tag-democracy { background: #e8f0fe; color: #0b5e9e; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; }
+        .tag-crisis { background: #2c3e50; color: #ffd966; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; display: inline-block; }
 
         .trending-item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
         .trending-num { font-size: 1.5rem; font-weight: 800; color: #eee; margin-right: 15px; min-width: 30px; }
@@ -158,6 +159,20 @@
             display: inline-block;
             margin-right: 10px;
         }
+        .btn-outline-crisis {
+            border: 1px solid #ffd966;
+            color: #ffd966;
+            background: transparent;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-crisis:hover {
+            background: #ffd966;
+            color: #2c3e50;
+            border-color: #ffd966;
+        }
+        .crisis-card-bg {
+            background: linear-gradient(135deg, #1e2a3a 0%, #0f1722 100%);
+        }
     </style>
 </head>
 <body>
@@ -211,7 +226,7 @@
         <div class="ticker-wrap">
             <span class="ticker-label">🚨 EXCLUSIVE</span>
             <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="font-weight: 600; font-size: 0.85rem;">
-⚡ SWEEP TV EXCLUSIVE: Ambode, Hamzat, Abiru, Alausa, Muri-Okunola emerge as top Lagos governorship contenders for 2027. | "The Making of APC" — Inside the merger that won power & the cracks that followed. | Gov. Alia: "Benue voters, not elites, will decide 2027." | Federal government directs four ministers to resign for 2027 races.
+⚡ SWEEP TV EXCLUSIVE: Ambode, Hamzat, Abiru, Alausa, Muri-Okunola emerge as top Lagos governorship contenders for 2027. | "The Making of APC" — Inside the merger that won power & the cracks that followed. | NIGERIA IN CRISIS: Hunger, fear, soaring cost of living push millions to the brink. | Gov. Alia: "Benue voters, not elites, will decide 2027." | Federal government directs four ministers to resign for 2027 races.
             </marquee>
         </div>
 
@@ -254,6 +269,35 @@
         <!-- MAIN DOUBLE COLUMN: REST OF THE NEWS -->
         <div class="row">
             <div class="col-lg-8">
+                <!-- NEW FEATURE: NIGERIA IN CRISIS (Hunger, Fear, Soaring Cost of Living) -->
+                <a href="report8.html" class="article-link" target="_blank">
+                    <div class="news-card card mb-4 border-0 shadow-sm crisis-card-bg text-white">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://foreignpolicy.com/wp-content/uploads/2021/09/Nigeria-Abuja-poverty-urban-growth-transportation-2020-05-04T000000Z_1635909972_RC2OHG9OU0A8_RTRMADP_3_HEALTH-CORONAVIRUS-NIGERIA-LOCKDOWN.jpg?quality=90 " class="img-fluid h-100 rounded-start" alt="Nigeria crisis - hunger protest" style="object-fit: cover; width: 100%; min-height: 220px;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-3 p-md-4">
+                                    <div class="d-flex align-items-center gap-2 flex-wrap mb-2">
+                                        <span class="tag-crisis">⚠️ NATIONAL EMERGENCY</span>
+                                        <span class="badge bg-danger">SPECIAL REPORT</span>
+                                    </div>
+                                    <h5 class="fw-bold mt-1">NIGERIA IN CRISIS: HUNGER, FEAR, AND SOARING COST OF LIVING PUSH MILLIONS TO THE BRINK</h5>
+                                    <p class="text-white-50 small">Nigeria is currently facing one of its most difficult moments in recent history, as a combination of rising insecurity, economic hardship, and increasing fuel prices continues to put unbearable pressure on citizens across the country.</p>
+                                    <div class="bg-white bg-opacity-10 rounded-3 p-2 mt-2">
+                                        <i class="fas fa-chart-line text-warning me-1"></i>
+                                        <span class="small">Food inflation hits 42% • Fuel at ₦1,200/litre • Widespread protests</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-3 justify-content-between flex-wrap">
+                                        <small class="text-white-50"><i class="far fa-clock me-1"></i> Published April 5, 2026 · Abuja Bureau</small>
+                                        <span class="btn btn-sm btn-outline-crisis rounded-pill px-3 py-1 fw-bold">📢 READ FULL REPORT →</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
                 <!-- NEW: The Making of APC — Unity & Cracks Feature Story (latest blog) -->
                 <a href="report7.html" class="article-link" target="_blank">
                     <div class="news-card card mb-4 border-0 shadow-sm">
@@ -448,9 +492,14 @@
                     <a href="report7.html" class="btn btn-outline-light btn-sm w-100 fw-bold py-2 mt-3" target="_blank">📖 Read "Making of APC" Feature →</a>
                 </div>
 
-                <!-- In the news (includes Alia reference) -->
+                <!-- In the news (includes Alia reference + Nigeria Crisis) -->
                 <div class="sidebar-widget">
                     <h5 class="fw-bold mb-3"><i class="fas fa-newspaper text-danger me-2"></i>Latest headlines</h5>
+                    <div class="mb-3 pb-2 border-bottom">
+                        <span class="badge bg-light text-dark mb-1">🇳🇬 NATIONAL CRISIS</span>
+                        <p class="fw-bold small mb-0">Hunger, fear, soaring cost of living push millions to the brink — Full report</p>
+                        <a href="report8.html" class="small text-danger" target="_blank">Read special coverage →</a>
+                    </div>
                     <div class="mb-3 pb-2 border-bottom">
                         <span class="badge bg-light text-dark mb-1">APC HISTORY</span>
                         <p class="fw-bold small mb-0">From merger to division: How the APC's founding unity crumbled</p>
@@ -470,11 +519,6 @@
                         <span class="badge bg-light text-dark mb-1">ALLEGATION</span>
                         <p class="fw-bold small mb-0">Ohiri challenges Umahi: "public must know source of Lekki, Enugu properties"</p>
                         <a href="report3.html" class="small text-danger" target="_blank">Full story →</a>
-                    </div>
-                    <div class="mb-3 pb-2 border-bottom">
-                        <span class="badge bg-light text-dark mb-1">PRESIDENTIAL DIRECTIVE</span>
-                        <p class="fw-bold small mb-0">SGF circular: all political appointees for 2027 races resign by March 31</p>
-                        <a href="report1.html" class="small text-danger" target="_blank">Read circular →</a>
                     </div>
                     <a href="Politics.html" class="text-danger fw-bold text-decoration-none small">More headlines →</a>
                 </div>
@@ -502,7 +546,7 @@
             </div>
         </div>
 
-        <!-- Dual highlight cards: Lagos 2027 + APC Making -->
+        <!-- Dual highlight cards: Lagos 2027 + APC Making + Nigeria crisis spotlight -->
         <div class="row mt-4 g-4">
             <div class="col-md-6">
                 <div class="bg-white rounded-4 p-4 shadow-sm h-100">
@@ -529,7 +573,7 @@
                 <div class="col-lg-6">
                     <h4 class="text-white fw-800">SWEEP<span class="text-danger">TV</span></h4>
                     <p style="color: #aaa; font-size: 0.9rem;">Nigeria's premier digital media platform for governance and development. Unbiased, intense, political.</p>
-                    <p class="small mt-2 text-white-50"><i class="fas fa-check-circle text-danger me-1"></i> Exclusive: APC Big Names Emerge in Lagos Governorship Race for 2027 | The Making of APC: Unity & Cracks</p>
+                    <p class="small mt-2 text-white-50"><i class="fas fa-check-circle text-danger me-1"></i> Exclusive: APC Big Names Emerge in Lagos Governorship Race for 2027 | The Making of APC: Unity & Cracks | Nigeria in Crisis: Hunger, Fear & Soaring Costs</p>
                 </div>
                 <div class="col-lg-6">
                     <h6 class="fw-bold mb-3 text-white">STAY UPDATED</h6>
@@ -540,7 +584,7 @@
                 </div>
             </div>
             <div class="footer-bottom mt-5 pt-4 border-top border-secondary text-center">
-                <p style="color: #888; font-size: 0.8rem;">&copy; 2026 Sweep TV Nigeria. All Rights Reserved. Today's features: Lagos 2027 — APC Big Names Emerge + The Making of APC: Unity That Won Power—and the Cracks That Followed.</p>
+                <p style="color: #888; font-size: 0.8rem;">&copy; 2026 Sweep TV Nigeria. All Rights Reserved. Today's features: Lagos 2027 — APC Big Names Emerge + The Making of APC: Unity That Won Power—and the Cracks That Followed + Nigeria in Crisis: Hunger, Fear, and Soaring Cost of Living.</p>
             </div>
         </div>
     </footer>
